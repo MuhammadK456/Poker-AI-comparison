@@ -1,0 +1,627 @@
+{
+  "pairs_per_matchup": 2000,
+  "played_hands": 80000,
+  "wall_seconds": 320.2957859170856,
+  "results": {
+    "seed-101": {
+      "evaluation_seconds": 140.07129720796365,
+      "matchups": {
+        "random": {
+          "bb_per_100": -81.5625,
+          "ci95": [
+            -199.84843750000002,
+            43.25312499999991
+          ],
+          "difference_vs_traditional": -1135.9375,
+          "difference_ci95": [
+            -1292.2778125,
+            -972.2959374999999
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2845.4823854834876,
+            "approx_half_width_at_10000_pairs": 55.771454755476356,
+            "pairs_for_half_width": {
+              "50": 12442,
+              "100": 3111,
+              "200": 778
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 3674.5561793434763,
+            "approx_half_width_at_10000_pairs": 72.02130111513213,
+            "pairs_for_half_width": {
+              "50": 20749,
+              "100": 5188,
+              "200": 1297
+            }
+          }
+        },
+        "passive": {
+          "bb_per_100": 401.5125,
+          "ci95": [
+            281.2134375,
+            521.23875
+          ],
+          "difference_vs_traditional": 158.7375,
+          "difference_ci95": [
+            38.97375,
+            276.7437499999999
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2746.3828409743514,
+            "approx_half_width_at_10000_pairs": 53.829103683097294,
+            "pairs_for_half_width": {
+              "50": 11591,
+              "100": 2898,
+              "200": 725
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 2736.309931205447,
+            "approx_half_width_at_10000_pairs": 53.63167465162675,
+            "pairs_for_half_width": {
+              "50": 11506,
+              "100": 2877,
+              "200": 720
+            }
+          }
+        },
+        "tight": {
+          "bb_per_100": -63.7875,
+          "ci95": [
+            -139.4484375,
+            14.048749999999938
+          ],
+          "difference_vs_traditional": -14.1625,
+          "difference_ci95": [
+            -96.1153125,
+            74.16249999999994
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 1782.5733508664825,
+            "approx_half_width_at_10000_pairs": 34.93843767698306,
+            "pairs_for_half_width": {
+              "50": 4883,
+              "100": 1221,
+              "200": 306
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 1967.4414283481835,
+            "approx_half_width_at_10000_pairs": 38.561851995624394,
+            "pairs_for_half_width": {
+              "50": 5949,
+              "100": 1488,
+              "200": 372
+            }
+          }
+        },
+        "loose_aggressive": {
+          "bb_per_100": -205.1375,
+          "ci95": [
+            -296.1271875,
+            -120.40937500000008
+          ],
+          "difference_vs_traditional": -425.3375,
+          "difference_ci95": [
+            -523.679375,
+            -326.6309375000003
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2028.2304856808737,
+            "approx_half_width_at_10000_pairs": 39.753317519345124,
+            "pairs_for_half_width": {
+              "50": 6322,
+              "100": 1581,
+              "200": 396
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 2242.857363536597,
+            "approx_half_width_at_10000_pairs": 43.96000432531729,
+            "pairs_for_half_width": {
+              "50": 7730,
+              "100": 1933,
+              "200": 484
+            }
+          }
+        },
+        "traditional": {
+          "bb_per_100": -234.9625,
+          "ci95": [
+            -312.91593750000004,
+            -150.509375
+          ],
+          "difference_vs_traditional": -234.9625,
+          "difference_ci95": [
+            -320.3753125,
+            -148.85500000000005
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 1873.0173272150405,
+            "approx_half_width_at_10000_pairs": 36.711139613414794,
+            "pairs_for_half_width": {
+              "50": 5391,
+              "100": 1348,
+              "200": 337
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 1873.0173272150405,
+            "approx_half_width_at_10000_pairs": 36.711139613414794,
+            "pairs_for_half_width": {
+              "50": 5391,
+              "100": 1348,
+              "200": 337
+            }
+          }
+        }
+      }
+    },
+    "seed-202": {
+      "evaluation_seconds": 148.92895304097328,
+      "matchups": {
+        "random": {
+          "bb_per_100": -133.4,
+          "ci95": [
+            -238.0659375,
+            -25.398437500000007
+          ],
+          "difference_vs_traditional": -1187.775,
+          "difference_ci95": [
+            -1354.1365625,
+            -1035.895625
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2551.934682806881,
+            "approx_half_width_at_10000_pairs": 50.01791978301487,
+            "pairs_for_half_width": {
+              "50": 10008,
+              "100": 2502,
+              "200": 626
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 3499.549288406436,
+            "approx_half_width_at_10000_pairs": 68.59116605276614,
+            "pairs_for_half_width": {
+              "50": 18819,
+              "100": 4705,
+              "200": 1177
+            }
+          }
+        },
+        "passive": {
+          "bb_per_100": 519.25,
+          "ci95": [
+            393.1071875,
+            645.0321875
+          ],
+          "difference_vs_traditional": 276.475,
+          "difference_ci95": [
+            146.960625,
+            400.9556249999999
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2833.755153790782,
+            "approx_half_width_at_10000_pairs": 55.54160101429933,
+            "pairs_for_half_width": {
+              "50": 12340,
+              "100": 3085,
+              "200": 772
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 2797.7688127398537,
+            "approx_half_width_at_10000_pairs": 54.83626872970113,
+            "pairs_for_half_width": {
+              "50": 12029,
+              "100": 3008,
+              "200": 752
+            }
+          }
+        },
+        "tight": {
+          "bb_per_100": -150.45,
+          "ci95": [
+            -234.72093750000002,
+            -64.18718750000001
+          ],
+          "difference_vs_traditional": -100.825,
+          "difference_ci95": [
+            -187.646875,
+            -15.109687500000083
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 1870.797052944721,
+            "approx_half_width_at_10000_pairs": 36.66762223771653,
+            "pairs_for_half_width": {
+              "50": 5379,
+              "100": 1345,
+              "200": 337
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 2059.963845531627,
+            "approx_half_width_at_10000_pairs": 40.375291372419895,
+            "pairs_for_half_width": {
+              "50": 6521,
+              "100": 1631,
+              "200": 408
+            }
+          }
+        },
+        "loose_aggressive": {
+          "bb_per_100": -307.375,
+          "ci95": [
+            -400.09218749999997,
+            -215.1375
+          ],
+          "difference_vs_traditional": -527.575,
+          "difference_ci95": [
+            -626.913125,
+            -430.0228125
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2102.8707502057837,
+            "approx_half_width_at_10000_pairs": 41.21626670403336,
+            "pairs_for_half_width": {
+              "50": 6796,
+              "100": 1699,
+              "200": 425
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 2241.033407770257,
+            "approx_half_width_at_10000_pairs": 43.924254792297035,
+            "pairs_for_half_width": {
+              "50": 7718,
+              "100": 1930,
+              "200": 483
+            }
+          }
+        },
+        "traditional": {
+          "bb_per_100": -189.525,
+          "ci95": [
+            -269.35843750000004,
+            -111.01125
+          ],
+          "difference_vs_traditional": -189.525,
+          "difference_ci95": [
+            -269.35812500000003,
+            -108.93406250000002
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 1863.3407615817043,
+            "approx_half_width_at_10000_pairs": 36.521478927001404,
+            "pairs_for_half_width": {
+              "50": 5336,
+              "100": 1334,
+              "200": 334
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 1863.3407615817043,
+            "approx_half_width_at_10000_pairs": 36.521478927001404,
+            "pairs_for_half_width": {
+              "50": 5336,
+              "100": 1334,
+              "200": 334
+            }
+          }
+        }
+      }
+    },
+    "seed-303": {
+      "evaluation_seconds": 130.2689070000779,
+      "matchups": {
+        "random": {
+          "bb_per_100": 50.275,
+          "ci95": [
+            -55.889375,
+            156.45281249999996
+          ],
+          "difference_vs_traditional": -1004.1,
+          "difference_ci95": [
+            -1147.23,
+            -859.1850000000002
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2349.181080770515,
+            "approx_half_width_at_10000_pairs": 46.04394918310209,
+            "pairs_for_half_width": {
+              "50": 8481,
+              "100": 2121,
+              "200": 531
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 3327.4023641944214,
+            "approx_half_width_at_10000_pairs": 65.21708633821066,
+            "pairs_for_half_width": {
+              "50": 17014,
+              "100": 4254,
+              "200": 1064
+            }
+          }
+        },
+        "passive": {
+          "bb_per_100": 385.575,
+          "ci95": [
+            266.624375,
+            512.1631249999999
+          ],
+          "difference_vs_traditional": 142.8,
+          "difference_ci95": [
+            16.881875,
+            272.675625
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2860.2292084617047,
+            "approx_half_width_at_10000_pairs": 56.06049248584941,
+            "pairs_for_half_width": {
+              "50": 12572,
+              "100": 3143,
+              "200": 786
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 2851.610334661869,
+            "approx_half_width_at_10000_pairs": 55.89156255937262,
+            "pairs_for_half_width": {
+              "50": 12496,
+              "100": 3124,
+              "200": 781
+            }
+          }
+        },
+        "tight": {
+          "bb_per_100": -84.8,
+          "ci95": [
+            -168.24531249999998,
+            -0.6121875000000018
+          ],
+          "difference_vs_traditional": -35.175,
+          "difference_ci95": [
+            -125.98625,
+            57.40187499999999
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 1957.936437310025,
+            "approx_half_width_at_10000_pairs": 38.37555417127649,
+            "pairs_for_half_width": {
+              "50": 5891,
+              "100": 1473,
+              "200": 369
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 2135.951805269074,
+            "approx_half_width_at_10000_pairs": 41.86465538327385,
+            "pairs_for_half_width": {
+              "50": 7011,
+              "100": 1753,
+              "200": 439
+            }
+          }
+        },
+        "loose_aggressive": {
+          "bb_per_100": -139.875,
+          "ci95": [
+            -228.705625,
+            -54.07562500000014
+          ],
+          "difference_vs_traditional": -360.075,
+          "difference_ci95": [
+            -461.53125,
+            -256.5587500000001
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2077.0413536488345,
+            "approx_half_width_at_10000_pairs": 40.710010531517156,
+            "pairs_for_half_width": {
+              "50": 6630,
+              "100": 1658,
+              "200": 415
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 2311.8736176934704,
+            "approx_half_width_at_10000_pairs": 45.31272290679201,
+            "pairs_for_half_width": {
+              "50": 8213,
+              "100": 2054,
+              "200": 514
+            }
+          }
+        },
+        "traditional": {
+          "bb_per_100": -201.95,
+          "ci95": [
+            -294.5825,
+            -113.65
+          ],
+          "difference_vs_traditional": -201.95,
+          "difference_ci95": [
+            -292.025625,
+            -115.34875
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2025.091774672922,
+            "approx_half_width_at_10000_pairs": 39.69179878358927,
+            "pairs_for_half_width": {
+              "50": 6302,
+              "100": 1576,
+              "200": 394
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 2025.091774672922,
+            "approx_half_width_at_10000_pairs": 39.69179878358927,
+            "pairs_for_half_width": {
+              "50": 6302,
+              "100": 1576,
+              "200": 394
+            }
+          }
+        }
+      }
+    },
+    "traditional": {
+      "evaluation_seconds": 318.08590925007593,
+      "matchups": {
+        "random": {
+          "bb_per_100": 1054.375,
+          "ci95": [
+            943.3121874999999,
+            1177.7778125
+          ],
+          "difference_vs_traditional": 0.0,
+          "difference_ci95": [
+            0.0,
+            0.0
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 2828.096740736158,
+            "approx_half_width_at_10000_pairs": 55.4306961184287,
+            "pairs_for_half_width": {
+              "50": 12291,
+              "100": 3073,
+              "200": 769
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 0.0,
+            "approx_half_width_at_10000_pairs": 0.0,
+            "pairs_for_half_width": {
+              "50": 2,
+              "100": 2,
+              "200": 2
+            }
+          }
+        },
+        "passive": {
+          "bb_per_100": 242.775,
+          "ci95": [
+            221.62375,
+            265.0775
+          ],
+          "difference_vs_traditional": 0.0,
+          "difference_ci95": [
+            0.0,
+            0.0
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 488.61633449585787,
+            "approx_half_width_at_10000_pairs": 9.576880156118813,
+            "pairs_for_half_width": {
+              "50": 367,
+              "100": 92,
+              "200": 23
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 0.0,
+            "approx_half_width_at_10000_pairs": 0.0,
+            "pairs_for_half_width": {
+              "50": 2,
+              "100": 2,
+              "200": 2
+            }
+          }
+        },
+        "tight": {
+          "bb_per_100": -49.625,
+          "ci95": [
+            -87.88906250000001,
+            -12.790625000000052
+          ],
+          "difference_vs_traditional": 0.0,
+          "difference_ci95": [
+            0.0,
+            0.0
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 866.5482891008855,
+            "approx_half_width_at_10000_pairs": 16.984346466377357,
+            "pairs_for_half_width": {
+              "50": 1154,
+              "100": 289,
+              "200": 73
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 0.0,
+            "approx_half_width_at_10000_pairs": 0.0,
+            "pairs_for_half_width": {
+              "50": 2,
+              "100": 2,
+              "200": 2
+            }
+          }
+        },
+        "loose_aggressive": {
+          "bb_per_100": 220.2,
+          "ci95": [
+            176.920625,
+            262.85125
+          ],
+          "difference_vs_traditional": 0.0,
+          "difference_ci95": [
+            0.0,
+            0.0
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 976.183090774142,
+            "approx_half_width_at_10000_pairs": 19.133188579173183,
+            "pairs_for_half_width": {
+              "50": 1465,
+              "100": 367,
+              "200": 92
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 0.0,
+            "approx_half_width_at_10000_pairs": 0.0,
+            "pairs_for_half_width": {
+              "50": 2,
+              "100": 2,
+              "200": 2
+            }
+          }
+        },
+        "traditional": {
+          "bb_per_100": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference_vs_traditional": 0.0,
+          "difference_ci95": [
+            0.0,
+            0.0
+          ],
+          "return_precision": {
+            "pair_sd_bb_per_100": 0.0,
+            "approx_half_width_at_10000_pairs": 0.0,
+            "pairs_for_half_width": {
+              "50": 2,
+              "100": 2,
+              "200": 2
+            }
+          },
+          "difference_precision": {
+            "pair_sd_bb_per_100": 0.0,
+            "approx_half_width_at_10000_pairs": 0.0,
+            "pairs_for_half_width": {
+              "50": 2,
+              "100": 2,
+              "200": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

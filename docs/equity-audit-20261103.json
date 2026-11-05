@@ -1,0 +1,59 @@
+{
+  "seed": 20261103,
+  "states": 100,
+  "repeats_per_state": 10,
+  "calculator_config": {
+    "samples": 256,
+    "seed": 20261027,
+    "cache_size": 4096
+  },
+  "preflop_table_sha256": "d9003794a564e2fb1764634f6151689f27470b2387bcef589814675baf3f6f30",
+  "opponent_range": "uniform_legal",
+  "reference": "exact river enumeration, 990 combinations",
+  "error_units": "pot-share probability, multiply by 100 for percentage points",
+  "river": {
+    "128": {
+      "mae": 0.026637357954545453,
+      "rmse": 0.034682055356887516,
+      "bias": 0.0009332386363636373,
+      "median_ms": 0.9949164814315736
+    },
+    "256": {
+      "mae": 0.01843528251262626,
+      "rmse": 0.024479578151356957,
+      "bias": -0.0010198863636363628,
+      "median_ms": 1.9750840729102492
+    },
+    "1024": {
+      "mae": 0.009475529711174241,
+      "rmse": 0.01244560318410067,
+      "bias": 3.1383167613637285e-05,
+      "median_ms": 7.882333011366427
+    }
+  },
+  "exact_river_median_ms": 6.855249986983836,
+  "flop_median_ms": {
+    "128": 1.970646029803902,
+    "256": 3.9276249590329826,
+    "1024": 15.780728950630873
+  },
+  "integration": {
+    "hands": 1000,
+    "decisions": 6156,
+    "seconds": 17.301912958035246,
+    "hands_per_second": 57.79707726107744,
+    "methods": {
+      "preflop_lookup": 2264,
+      "monte_carlo": 2891,
+      "exact_river": 1001
+    },
+    "cache_entries": 3314
+  },
+  "runtime": {
+    "python": "3.11.9",
+    "platform": "macOS-14.2.1-arm64-arm-64bit",
+    "treys": "0.1.8",
+    "pokerkit": "0.7.7"
+  },
+  "limitations": "Uniform-range river errors do not measure range-model error or general flop accuracy. Timings are local measurements, not training-time forecasts."
+}

@@ -1,0 +1,2310 @@
+{
+  "purpose": "Offline educational replay, not evaluation or best-hand selection",
+  "checkpoint": "artifacts/dqn-three-seed-20261104/seed-101/final.pt",
+  "checkpoint_sha256": "be5fdb09a11c964cb2114f6400b4a43814b15014c28667574e8abfe5cd0f50f7",
+  "training_seed": 101,
+  "demo_seed": 17,
+  "pairs": 2,
+  "include_equity": true,
+  "hands": [
+    {
+      "deal_id": 0,
+      "ml_seat": 0,
+      "decisions": [
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "4s",
+              "Kc"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": true,
+            "pot": 3,
+            "call_amount": 1,
+            "stacks": [
+              198,
+              199
+            ],
+            "street_bets": [
+              2,
+              1
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 4
+              },
+              {
+                "slot": 4,
+                "raise_to": 6
+              },
+              {
+                "slot": 5,
+                "raise_to": 200
+              }
+            ],
+            "history": []
+          },
+          "slot": 1,
+          "rule_trace": {
+            "slot": 1,
+            "reason": "call_pot_odds",
+            "equity": 0.5175,
+            "equity_method": "preflop_lookup",
+            "equity_outcomes": 10000,
+            "pot_odds": 0.25,
+            "callable_pot": 3,
+            "required_equity": 0.28,
+            "base_margin": 0.03,
+            "position_adjustment": 0.0,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 198,
+            "raise_to": null,
+            "chips_added": 1,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 1,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "5d",
+              "Js"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": false,
+            "pot": 4,
+            "call_amount": 0,
+            "stacks": [
+              198,
+              198
+            ],
+            "street_bets": [
+              2,
+              2
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 4
+              },
+              {
+                "slot": 4,
+                "raise_to": 6
+              },
+              {
+                "slot": 5,
+                "raise_to": 200
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 4,
+          "legal_q": {
+            "1": 0.07848548144102097,
+            "2": 0.0795678049325943,
+            "4": 0.11552393436431885,
+            "5": -0.7234277725219727
+          },
+          "supplied_equity": 0.4770500063896179,
+          "action": {
+            "seat": 0,
+            "street": 0,
+            "kind": "raise",
+            "chips_added": 4,
+            "raise_to": 6,
+            "slot": 4
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "4s",
+              "Kc"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": true,
+            "pot": 8,
+            "call_amount": 4,
+            "stacks": [
+              194,
+              198
+            ],
+            "street_bets": [
+              6,
+              2
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 10
+              },
+              {
+                "slot": 3,
+                "raise_to": 12
+              },
+              {
+                "slot": 4,
+                "raise_to": 18
+              },
+              {
+                "slot": 5,
+                "raise_to": 200
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "raise",
+                "chips_added": 4,
+                "raise_to": 6,
+                "slot": 4
+              }
+            ]
+          },
+          "slot": 1,
+          "rule_trace": {
+            "slot": 1,
+            "reason": "call_pot_odds",
+            "equity": 0.5175,
+            "equity_method": "preflop_lookup",
+            "equity_outcomes": 10000,
+            "pot_odds": 0.3333333333333333,
+            "callable_pot": 8,
+            "required_equity": 0.3633333333333333,
+            "base_margin": 0.03,
+            "position_adjustment": 0.0,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 1,
+            "effective_stack": 194,
+            "raise_to": null,
+            "chips_added": 4,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 4,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "5d",
+              "Js"
+            ],
+            "board": [
+              "Ac",
+              "Th",
+              "Ks"
+            ],
+            "street": 1,
+            "is_button": false,
+            "pot": 12,
+            "call_amount": 0,
+            "stacks": [
+              194,
+              194
+            ],
+            "street_bets": [
+              0,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 2
+              },
+              {
+                "slot": 3,
+                "raise_to": 6
+              },
+              {
+                "slot": 4,
+                "raise_to": 12
+              },
+              {
+                "slot": 5,
+                "raise_to": 194
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "raise",
+                "chips_added": 4,
+                "raise_to": 6,
+                "slot": 4
+              },
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 4,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 4,
+          "legal_q": {
+            "1": 0.032443150877952576,
+            "2": 0.06660784780979156,
+            "3": 0.07484123855829239,
+            "4": 0.09380143880844116,
+            "5": -0.2516673803329468
+          },
+          "supplied_equity": 0.431640625,
+          "action": {
+            "seat": 0,
+            "street": 1,
+            "kind": "bet",
+            "chips_added": 12,
+            "raise_to": 12,
+            "slot": 4
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "4s",
+              "Kc"
+            ],
+            "board": [
+              "Ac",
+              "Th",
+              "Ks"
+            ],
+            "street": 1,
+            "is_button": true,
+            "pot": 24,
+            "call_amount": 12,
+            "stacks": [
+              182,
+              194
+            ],
+            "street_bets": [
+              12,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 24
+              },
+              {
+                "slot": 3,
+                "raise_to": 30
+              },
+              {
+                "slot": 4,
+                "raise_to": 48
+              },
+              {
+                "slot": 5,
+                "raise_to": 194
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "raise",
+                "chips_added": 4,
+                "raise_to": 6,
+                "slot": 4
+              },
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 4,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 1,
+                "kind": "bet",
+                "chips_added": 12,
+                "raise_to": 12,
+                "slot": 4
+              }
+            ]
+          },
+          "slot": 3,
+          "rule_trace": {
+            "slot": 3,
+            "reason": "value_half_pot",
+            "equity": 0.73046875,
+            "equity_method": "monte_carlo",
+            "equity_outcomes": 256,
+            "pot_odds": 0.3333333333333333,
+            "callable_pot": 24,
+            "required_equity": 0.3633333333333333,
+            "base_margin": 0.03,
+            "position_adjustment": 0.0,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 182,
+            "raise_to": 30,
+            "chips_added": 30,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 1,
+            "street": 1,
+            "kind": "raise",
+            "chips_added": 30,
+            "raise_to": 30,
+            "slot": 3
+          }
+        },
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "5d",
+              "Js"
+            ],
+            "board": [
+              "Ac",
+              "Th",
+              "Ks"
+            ],
+            "street": 1,
+            "is_button": false,
+            "pot": 54,
+            "call_amount": 18,
+            "stacks": [
+              182,
+              164
+            ],
+            "street_bets": [
+              12,
+              30
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 48
+              },
+              {
+                "slot": 3,
+                "raise_to": 66
+              },
+              {
+                "slot": 4,
+                "raise_to": 102
+              },
+              {
+                "slot": 5,
+                "raise_to": 194
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "raise",
+                "chips_added": 4,
+                "raise_to": 6,
+                "slot": 4
+              },
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 4,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 1,
+                "kind": "bet",
+                "chips_added": 12,
+                "raise_to": 12,
+                "slot": 4
+              },
+              {
+                "seat": 1,
+                "street": 1,
+                "kind": "raise",
+                "chips_added": 30,
+                "raise_to": 30,
+                "slot": 3
+              }
+            ]
+          },
+          "slot": 0,
+          "legal_q": {
+            "0": -0.10503019392490387,
+            "1": -0.12862004339694977,
+            "2": -0.20229679346084595,
+            "3": -0.4006391167640686,
+            "4": -0.2762922942638397,
+            "5": -1.1264703273773193
+          },
+          "supplied_equity": 0.431640625,
+          "action": {
+            "seat": 0,
+            "street": 1,
+            "kind": "fold",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 0
+          }
+        }
+      ],
+      "result": {
+        "final_stacks": [
+          182,
+          218
+        ],
+        "net_chips": [
+          -18,
+          18
+        ],
+        "board": [
+          "Ac",
+          "Th",
+          "Ks"
+        ],
+        "history": [
+          {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 1,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 0,
+            "street": 0,
+            "kind": "raise",
+            "chips_added": 4,
+            "raise_to": 6,
+            "slot": 4
+          },
+          {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 4,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 0,
+            "street": 1,
+            "kind": "bet",
+            "chips_added": 12,
+            "raise_to": 12,
+            "slot": 4
+          },
+          {
+            "seat": 1,
+            "street": 1,
+            "kind": "raise",
+            "chips_added": 30,
+            "raise_to": 30,
+            "slot": 3
+          },
+          {
+            "seat": 0,
+            "street": 1,
+            "kind": "fold",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 0
+          }
+        ]
+      },
+      "ml_net_chips": -18
+    },
+    {
+      "deal_id": 0,
+      "ml_seat": 1,
+      "decisions": [
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "4s",
+              "Kc"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": true,
+            "pot": 3,
+            "call_amount": 1,
+            "stacks": [
+              198,
+              199
+            ],
+            "street_bets": [
+              2,
+              1
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 4
+              },
+              {
+                "slot": 4,
+                "raise_to": 6
+              },
+              {
+                "slot": 5,
+                "raise_to": 200
+              }
+            ],
+            "history": []
+          },
+          "slot": 1,
+          "legal_q": {
+            "0": -0.006155963055789471,
+            "1": 0.12659718096256256,
+            "2": 0.07393766194581985,
+            "4": 0.07746829837560654,
+            "5": -0.06554991006851196
+          },
+          "supplied_equity": 0.5174999833106995,
+          "action": {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 1,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "5d",
+              "Js"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": false,
+            "pot": 4,
+            "call_amount": 0,
+            "stacks": [
+              198,
+              198
+            ],
+            "street_bets": [
+              2,
+              2
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 4
+              },
+              {
+                "slot": 4,
+                "raise_to": 6
+              },
+              {
+                "slot": 5,
+                "raise_to": 200
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 1,
+          "rule_trace": {
+            "slot": 1,
+            "reason": "check_free",
+            "equity": 0.47705,
+            "equity_method": "preflop_lookup",
+            "equity_outcomes": 10000,
+            "pot_odds": 0.0,
+            "callable_pot": 4,
+            "required_equity": 0.03,
+            "base_margin": 0.03,
+            "position_adjustment": 0.0,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 198,
+            "raise_to": null,
+            "chips_added": 0,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 0,
+            "street": 0,
+            "kind": "check",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "5d",
+              "Js"
+            ],
+            "board": [
+              "Ac",
+              "Th",
+              "Ks"
+            ],
+            "street": 1,
+            "is_button": false,
+            "pot": 4,
+            "call_amount": 0,
+            "stacks": [
+              198,
+              198
+            ],
+            "street_bets": [
+              0,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 2
+              },
+              {
+                "slot": 4,
+                "raise_to": 4
+              },
+              {
+                "slot": 5,
+                "raise_to": 198
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 1,
+          "rule_trace": {
+            "slot": 1,
+            "reason": "check_free",
+            "equity": 0.431640625,
+            "equity_method": "monte_carlo",
+            "equity_outcomes": 256,
+            "pot_odds": 0.0,
+            "callable_pot": 4,
+            "required_equity": 0.05,
+            "base_margin": 0.03,
+            "position_adjustment": 0.02,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 198,
+            "raise_to": null,
+            "chips_added": 0,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 0,
+            "street": 1,
+            "kind": "check",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "4s",
+              "Kc"
+            ],
+            "board": [
+              "Ac",
+              "Th",
+              "Ks"
+            ],
+            "street": 1,
+            "is_button": true,
+            "pot": 4,
+            "call_amount": 0,
+            "stacks": [
+              198,
+              198
+            ],
+            "street_bets": [
+              0,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 2
+              },
+              {
+                "slot": 4,
+                "raise_to": 4
+              },
+              {
+                "slot": 5,
+                "raise_to": 198
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 1,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 5,
+          "legal_q": {
+            "1": 1.0381158590316772,
+            "2": 1.0005944967269897,
+            "4": 0.9668000340461731,
+            "5": 1.1381725072860718
+          },
+          "supplied_equity": 0.73046875,
+          "action": {
+            "seat": 1,
+            "street": 1,
+            "kind": "bet",
+            "chips_added": 198,
+            "raise_to": 198,
+            "slot": 5
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "5d",
+              "Js"
+            ],
+            "board": [
+              "Ac",
+              "Th",
+              "Ks"
+            ],
+            "street": 1,
+            "is_button": false,
+            "pot": 202,
+            "call_amount": 198,
+            "stacks": [
+              198,
+              0
+            ],
+            "street_bets": [
+              0,
+              198
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 1,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 1,
+                "street": 1,
+                "kind": "bet",
+                "chips_added": 198,
+                "raise_to": 198,
+                "slot": 5
+              }
+            ]
+          },
+          "slot": 0,
+          "rule_trace": {
+            "slot": 0,
+            "reason": "fold_below_call_threshold",
+            "equity": 0.431640625,
+            "equity_method": "monte_carlo",
+            "equity_outcomes": 256,
+            "pot_odds": 0.495,
+            "callable_pot": 202,
+            "required_equity": 0.545,
+            "base_margin": 0.03,
+            "position_adjustment": 0.02,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 0,
+            "raise_to": null,
+            "chips_added": 0,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 0,
+            "street": 1,
+            "kind": "fold",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 0
+          }
+        }
+      ],
+      "result": {
+        "final_stacks": [
+          198,
+          202
+        ],
+        "net_chips": [
+          -2,
+          2
+        ],
+        "board": [
+          "Ac",
+          "Th",
+          "Ks"
+        ],
+        "history": [
+          {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 1,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 0,
+            "street": 0,
+            "kind": "check",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 0,
+            "street": 1,
+            "kind": "check",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 1,
+            "street": 1,
+            "kind": "bet",
+            "chips_added": 198,
+            "raise_to": 198,
+            "slot": 5
+          },
+          {
+            "seat": 0,
+            "street": 1,
+            "kind": "fold",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 0
+          }
+        ]
+      },
+      "ml_net_chips": 2
+    },
+    {
+      "deal_id": 1,
+      "ml_seat": 0,
+      "decisions": [
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "9h",
+              "Th"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": true,
+            "pot": 3,
+            "call_amount": 1,
+            "stacks": [
+              198,
+              199
+            ],
+            "street_bets": [
+              2,
+              1
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 4
+              },
+              {
+                "slot": 4,
+                "raise_to": 6
+              },
+              {
+                "slot": 5,
+                "raise_to": 200
+              }
+            ],
+            "history": []
+          },
+          "slot": 1,
+          "rule_trace": {
+            "slot": 1,
+            "reason": "call_pot_odds",
+            "equity": 0.54195,
+            "equity_method": "preflop_lookup",
+            "equity_outcomes": 10000,
+            "pot_odds": 0.25,
+            "callable_pot": 3,
+            "required_equity": 0.28,
+            "base_margin": 0.03,
+            "position_adjustment": 0.0,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 198,
+            "raise_to": null,
+            "chips_added": 1,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 1,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "Qc",
+              "Js"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": false,
+            "pot": 4,
+            "call_amount": 0,
+            "stacks": [
+              198,
+              198
+            ],
+            "street_bets": [
+              2,
+              2
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 4
+              },
+              {
+                "slot": 4,
+                "raise_to": 6
+              },
+              {
+                "slot": 5,
+                "raise_to": 200
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 5,
+          "legal_q": {
+            "1": 0.39177244901657104,
+            "2": 0.34601545333862305,
+            "4": 0.40310925245285034,
+            "5": 0.6217729449272156
+          },
+          "supplied_equity": 0.5898500084877014,
+          "action": {
+            "seat": 0,
+            "street": 0,
+            "kind": "raise",
+            "chips_added": 198,
+            "raise_to": 200,
+            "slot": 5
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "9h",
+              "Th"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": true,
+            "pot": 202,
+            "call_amount": 198,
+            "stacks": [
+              0,
+              198
+            ],
+            "street_bets": [
+              200,
+              2
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "raise",
+                "chips_added": 198,
+                "raise_to": 200,
+                "slot": 5
+              }
+            ]
+          },
+          "slot": 1,
+          "rule_trace": {
+            "slot": 1,
+            "reason": "call_pot_odds",
+            "equity": 0.54195,
+            "equity_method": "preflop_lookup",
+            "equity_outcomes": 10000,
+            "pot_odds": 0.495,
+            "callable_pot": 202,
+            "required_equity": 0.525,
+            "base_margin": 0.03,
+            "position_adjustment": 0.0,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 1,
+            "effective_stack": 0,
+            "raise_to": null,
+            "chips_added": 198,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 198,
+            "raise_to": null,
+            "slot": 1
+          }
+        }
+      ],
+      "result": {
+        "final_stacks": [
+          400,
+          0
+        ],
+        "net_chips": [
+          200,
+          -200
+        ],
+        "board": [
+          "2c",
+          "Jc",
+          "4d",
+          "Ad",
+          "Jh"
+        ],
+        "history": [
+          {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 1,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 0,
+            "street": 0,
+            "kind": "raise",
+            "chips_added": 198,
+            "raise_to": 200,
+            "slot": 5
+          },
+          {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 198,
+            "raise_to": null,
+            "slot": 1
+          }
+        ]
+      },
+      "ml_net_chips": 200
+    },
+    {
+      "deal_id": 1,
+      "ml_seat": 1,
+      "decisions": [
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "9h",
+              "Th"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": true,
+            "pot": 3,
+            "call_amount": 1,
+            "stacks": [
+              198,
+              199
+            ],
+            "street_bets": [
+              2,
+              1
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 4
+              },
+              {
+                "slot": 4,
+                "raise_to": 6
+              },
+              {
+                "slot": 5,
+                "raise_to": 200
+              }
+            ],
+            "history": []
+          },
+          "slot": 1,
+          "legal_q": {
+            "0": 0.010309895500540733,
+            "1": 0.16818395256996155,
+            "2": 0.14599069952964783,
+            "4": 0.15719527006149292,
+            "5": -0.5854352712631226
+          },
+          "supplied_equity": 0.541949987411499,
+          "action": {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 1,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "Qc",
+              "Js"
+            ],
+            "board": [],
+            "street": 0,
+            "is_button": false,
+            "pot": 4,
+            "call_amount": 0,
+            "stacks": [
+              198,
+              198
+            ],
+            "street_bets": [
+              2,
+              2
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 4
+              },
+              {
+                "slot": 4,
+                "raise_to": 6
+              },
+              {
+                "slot": 5,
+                "raise_to": 200
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 1,
+          "rule_trace": {
+            "slot": 1,
+            "reason": "check_free",
+            "equity": 0.58985,
+            "equity_method": "preflop_lookup",
+            "equity_outcomes": 10000,
+            "pot_odds": 0.0,
+            "callable_pot": 4,
+            "required_equity": 0.03,
+            "base_margin": 0.03,
+            "position_adjustment": 0.0,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 198,
+            "raise_to": null,
+            "chips_added": 0,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 0,
+            "street": 0,
+            "kind": "check",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "Qc",
+              "Js"
+            ],
+            "board": [
+              "2c",
+              "Jc",
+              "4d"
+            ],
+            "street": 1,
+            "is_button": false,
+            "pot": 4,
+            "call_amount": 0,
+            "stacks": [
+              198,
+              198
+            ],
+            "street_bets": [
+              0,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 2
+              },
+              {
+                "slot": 4,
+                "raise_to": 4
+              },
+              {
+                "slot": 5,
+                "raise_to": 198
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 2,
+          "rule_trace": {
+            "slot": 2,
+            "reason": "value_half_pot",
+            "equity": 0.81640625,
+            "equity_method": "monte_carlo",
+            "equity_outcomes": 256,
+            "pot_odds": 0.0,
+            "callable_pot": 4,
+            "required_equity": 0.05,
+            "base_margin": 0.03,
+            "position_adjustment": 0.02,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 198,
+            "raise_to": 2,
+            "chips_added": 2,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 0,
+            "street": 1,
+            "kind": "bet",
+            "chips_added": 2,
+            "raise_to": 2,
+            "slot": 2
+          }
+        },
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "9h",
+              "Th"
+            ],
+            "board": [
+              "2c",
+              "Jc",
+              "4d"
+            ],
+            "street": 1,
+            "is_button": true,
+            "pot": 6,
+            "call_amount": 2,
+            "stacks": [
+              196,
+              198
+            ],
+            "street_bets": [
+              2,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 4
+              },
+              {
+                "slot": 3,
+                "raise_to": 6
+              },
+              {
+                "slot": 4,
+                "raise_to": 10
+              },
+              {
+                "slot": 5,
+                "raise_to": 198
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 1,
+                "kind": "bet",
+                "chips_added": 2,
+                "raise_to": 2,
+                "slot": 2
+              }
+            ]
+          },
+          "slot": 1,
+          "legal_q": {
+            "0": -0.011019025929272175,
+            "1": 0.02775394171476364,
+            "2": -0.029445119202136993,
+            "3": 0.02319454401731491,
+            "4": 0.004940260201692581,
+            "5": -1.1836388111114502
+          },
+          "supplied_equity": 0.34765625,
+          "action": {
+            "seat": 1,
+            "street": 1,
+            "kind": "call",
+            "chips_added": 2,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "Qc",
+              "Js"
+            ],
+            "board": [
+              "2c",
+              "Jc",
+              "4d",
+              "Ad"
+            ],
+            "street": 2,
+            "is_button": false,
+            "pot": 8,
+            "call_amount": 0,
+            "stacks": [
+              196,
+              196
+            ],
+            "street_bets": [
+              0,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 2
+              },
+              {
+                "slot": 3,
+                "raise_to": 4
+              },
+              {
+                "slot": 4,
+                "raise_to": 8
+              },
+              {
+                "slot": 5,
+                "raise_to": 196
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 1,
+                "kind": "bet",
+                "chips_added": 2,
+                "raise_to": 2,
+                "slot": 2
+              },
+              {
+                "seat": 1,
+                "street": 1,
+                "kind": "call",
+                "chips_added": 2,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 3,
+          "rule_trace": {
+            "slot": 3,
+            "reason": "value_half_pot",
+            "equity": 0.763671875,
+            "equity_method": "monte_carlo",
+            "equity_outcomes": 256,
+            "pot_odds": 0.0,
+            "callable_pot": 8,
+            "required_equity": 0.05,
+            "base_margin": 0.03,
+            "position_adjustment": 0.02,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 196,
+            "raise_to": 4,
+            "chips_added": 4,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 0,
+            "street": 2,
+            "kind": "bet",
+            "chips_added": 4,
+            "raise_to": 4,
+            "slot": 3
+          }
+        },
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "9h",
+              "Th"
+            ],
+            "board": [
+              "2c",
+              "Jc",
+              "4d",
+              "Ad"
+            ],
+            "street": 2,
+            "is_button": true,
+            "pot": 12,
+            "call_amount": 4,
+            "stacks": [
+              192,
+              196
+            ],
+            "street_bets": [
+              4,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 8
+              },
+              {
+                "slot": 3,
+                "raise_to": 12
+              },
+              {
+                "slot": 4,
+                "raise_to": 20
+              },
+              {
+                "slot": 5,
+                "raise_to": 196
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 1,
+                "kind": "bet",
+                "chips_added": 2,
+                "raise_to": 2,
+                "slot": 2
+              },
+              {
+                "seat": 1,
+                "street": 1,
+                "kind": "call",
+                "chips_added": 2,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 2,
+                "kind": "bet",
+                "chips_added": 4,
+                "raise_to": 4,
+                "slot": 3
+              }
+            ]
+          },
+          "slot": 1,
+          "legal_q": {
+            "0": -0.024503648281097412,
+            "1": -0.014795348048210144,
+            "2": -0.11709845811128616,
+            "3": -0.1239730641245842,
+            "4": -0.1836298555135727,
+            "5": -1.8199472427368164
+          },
+          "supplied_equity": 0.296875,
+          "action": {
+            "seat": 1,
+            "street": 2,
+            "kind": "call",
+            "chips_added": 4,
+            "raise_to": null,
+            "slot": 1
+          }
+        },
+        {
+          "actor": "Traditional",
+          "observation": {
+            "seat": 0,
+            "hole_cards": [
+              "Qc",
+              "Js"
+            ],
+            "board": [
+              "2c",
+              "Jc",
+              "4d",
+              "Ad",
+              "Jh"
+            ],
+            "street": 3,
+            "is_button": false,
+            "pot": 16,
+            "call_amount": 0,
+            "stacks": [
+              192,
+              192
+            ],
+            "street_bets": [
+              0,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 2
+              },
+              {
+                "slot": 3,
+                "raise_to": 8
+              },
+              {
+                "slot": 4,
+                "raise_to": 16
+              },
+              {
+                "slot": 5,
+                "raise_to": 192
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 1,
+                "kind": "bet",
+                "chips_added": 2,
+                "raise_to": 2,
+                "slot": 2
+              },
+              {
+                "seat": 1,
+                "street": 1,
+                "kind": "call",
+                "chips_added": 2,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 2,
+                "kind": "bet",
+                "chips_added": 4,
+                "raise_to": 4,
+                "slot": 3
+              },
+              {
+                "seat": 1,
+                "street": 2,
+                "kind": "call",
+                "chips_added": 4,
+                "raise_to": null,
+                "slot": 1
+              }
+            ]
+          },
+          "slot": 4,
+          "rule_trace": {
+            "slot": 4,
+            "reason": "value_pot",
+            "equity": 0.9601010101010101,
+            "equity_method": "exact_river",
+            "equity_outcomes": 990,
+            "pot_odds": 0.0,
+            "callable_pot": 16,
+            "required_equity": 0.02,
+            "base_margin": 0.0,
+            "position_adjustment": 0.02,
+            "aggression_adjustment": 0.0,
+            "raises_this_street": 0,
+            "effective_stack": 192,
+            "raise_to": 16,
+            "chips_added": 16,
+            "commits_effective_stack": false,
+            "bluff_probability": 0.0,
+            "bluff_draw": null
+          },
+          "action": {
+            "seat": 0,
+            "street": 3,
+            "kind": "bet",
+            "chips_added": 16,
+            "raise_to": 16,
+            "slot": 4
+          }
+        },
+        {
+          "actor": "ML",
+          "observation": {
+            "seat": 1,
+            "hole_cards": [
+              "9h",
+              "Th"
+            ],
+            "board": [
+              "2c",
+              "Jc",
+              "4d",
+              "Ad",
+              "Jh"
+            ],
+            "street": 3,
+            "is_button": true,
+            "pot": 32,
+            "call_amount": 16,
+            "stacks": [
+              176,
+              192
+            ],
+            "street_bets": [
+              16,
+              0
+            ],
+            "legal_actions": [
+              {
+                "slot": 0,
+                "raise_to": null
+              },
+              {
+                "slot": 1,
+                "raise_to": null
+              },
+              {
+                "slot": 2,
+                "raise_to": 32
+              },
+              {
+                "slot": 3,
+                "raise_to": 40
+              },
+              {
+                "slot": 4,
+                "raise_to": 64
+              },
+              {
+                "slot": 5,
+                "raise_to": 192
+              }
+            ],
+            "history": [
+              {
+                "seat": 1,
+                "street": 0,
+                "kind": "call",
+                "chips_added": 1,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 0,
+                "kind": "check",
+                "chips_added": 0,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 1,
+                "kind": "bet",
+                "chips_added": 2,
+                "raise_to": 2,
+                "slot": 2
+              },
+              {
+                "seat": 1,
+                "street": 1,
+                "kind": "call",
+                "chips_added": 2,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 2,
+                "kind": "bet",
+                "chips_added": 4,
+                "raise_to": 4,
+                "slot": 3
+              },
+              {
+                "seat": 1,
+                "street": 2,
+                "kind": "call",
+                "chips_added": 4,
+                "raise_to": null,
+                "slot": 1
+              },
+              {
+                "seat": 0,
+                "street": 3,
+                "kind": "bet",
+                "chips_added": 16,
+                "raise_to": 16,
+                "slot": 4
+              }
+            ]
+          },
+          "slot": 0,
+          "legal_q": {
+            "0": -0.0375441312789917,
+            "1": -0.052910007536411285,
+            "2": -0.10795683413743973,
+            "3": -0.1327979564666748,
+            "4": -0.2309407740831375,
+            "5": -1.7689695358276367
+          },
+          "supplied_equity": 0.2712121307849884,
+          "action": {
+            "seat": 1,
+            "street": 3,
+            "kind": "fold",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 0
+          }
+        }
+      ],
+      "result": {
+        "final_stacks": [
+          208,
+          192
+        ],
+        "net_chips": [
+          8,
+          -8
+        ],
+        "board": [
+          "2c",
+          "Jc",
+          "4d",
+          "Ad",
+          "Jh"
+        ],
+        "history": [
+          {
+            "seat": 1,
+            "street": 0,
+            "kind": "call",
+            "chips_added": 1,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 0,
+            "street": 0,
+            "kind": "check",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 0,
+            "street": 1,
+            "kind": "bet",
+            "chips_added": 2,
+            "raise_to": 2,
+            "slot": 2
+          },
+          {
+            "seat": 1,
+            "street": 1,
+            "kind": "call",
+            "chips_added": 2,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 0,
+            "street": 2,
+            "kind": "bet",
+            "chips_added": 4,
+            "raise_to": 4,
+            "slot": 3
+          },
+          {
+            "seat": 1,
+            "street": 2,
+            "kind": "call",
+            "chips_added": 4,
+            "raise_to": null,
+            "slot": 1
+          },
+          {
+            "seat": 0,
+            "street": 3,
+            "kind": "bet",
+            "chips_added": 16,
+            "raise_to": 16,
+            "slot": 4
+          },
+          {
+            "seat": 1,
+            "street": 3,
+            "kind": "fold",
+            "chips_added": 0,
+            "raise_to": null,
+            "slot": 0
+          }
+        ]
+      },
+      "ml_net_chips": -8
+    }
+  ]
+}

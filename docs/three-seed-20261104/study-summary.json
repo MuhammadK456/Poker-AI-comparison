@@ -1,0 +1,78 @@
+{
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "validation_seed": 20261104,
+  "total_actual_decisions": 750008,
+  "training_seconds_per_seed": {
+    "101": 1693.1898601239081,
+    "202": 1683.835633332841,
+    "303": 1663.3021487909136
+  },
+  "peak_rss_bytes_per_seed": {
+    "101": 296615936,
+    "202": 295452672,
+    "303": 296730624
+  },
+  "results": {
+    "random": {
+      "per_seed_bb_per_100": {
+        "101": 261.5,
+        "202": 533.0,
+        "303": -9.5
+      },
+      "mean": 261.6666666666667,
+      "sample_sd": 271.25003840245506,
+      "min": -9.5,
+      "max": 533.0
+    },
+    "passive": {
+      "per_seed_bb_per_100": {
+        "101": 1568.5,
+        "202": 1607.0,
+        "303": 1348.0
+      },
+      "mean": 1507.8333333333333,
+      "sample_sd": 139.7518634342073,
+      "min": 1348.0,
+      "max": 1607.0
+    },
+    "tight": {
+      "per_seed_bb_per_100": {
+        "101": 353.75,
+        "202": 260.75,
+        "303": 220.75
+      },
+      "mean": 278.4166666666667,
+      "sample_sd": 68.23733093647006,
+      "min": 220.75,
+      "max": 353.75
+    },
+    "loose_aggressive": {
+      "per_seed_bb_per_100": {
+        "101": -162.5,
+        "202": 28.0,
+        "303": -58.0
+      },
+      "mean": -64.16666666666667,
+      "sample_sd": 95.39959818224254,
+      "min": -162.5,
+      "max": 28.0
+    },
+    "traditional": {
+      "per_seed_bb_per_100": {
+        "101": -193.5,
+        "202": 86.5,
+        "303": -82.0
+      },
+      "mean": -63.0,
+      "sample_sd": 140.96364779616056,
+      "min": -193.5,
+      "max": 86.5
+    }
+  },
+  "limits": "Three development runs, fixed final checkpoints. Per-seed hand intervals do not measure training-seed uncertainty; cross-seed SD/range are descriptive with only three seeds. Shared validation deals were reused along learning curves. No final-test evaluation or best-seed selection.",
+  "wall_seconds": 1766.8456211249577
+}

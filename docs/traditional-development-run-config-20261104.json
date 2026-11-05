@@ -1,0 +1,94 @@
+{
+  "seed": 20261104,
+  "pairs": 250,
+  "config": {
+    "schema_version": 1,
+    "purpose": "Development only; no final-test deals or ML checkpoint selection",
+    "selection_rule": "Select bluff_05 only if the lower paired-bootstrap 95% interval for its equally weighted mean improvement over no_bluff is above zero; otherwise retain no_bluff. Pot_odds is an ablation, not a candidate.",
+    "candidates": [
+      "no_bluff",
+      "bluff_05"
+    ],
+    "policies": {
+      "no_bluff": {
+        "base_margin": 0.03,
+        "position_margin": 0.02,
+        "repeated_raise_margin": 0.02,
+        "half_pot_threshold": 0.7,
+        "pot_threshold": 0.85,
+        "allin_threshold": 0.95,
+        "bluff_probability": 0.0,
+        "value_betting": true
+      },
+      "bluff_05": {
+        "base_margin": 0.03,
+        "position_margin": 0.02,
+        "repeated_raise_margin": 0.02,
+        "half_pot_threshold": 0.7,
+        "pot_threshold": 0.85,
+        "allin_threshold": 0.95,
+        "bluff_probability": 0.05,
+        "value_betting": true
+      },
+      "pot_odds": {
+        "base_margin": 0.0,
+        "position_margin": 0.0,
+        "repeated_raise_margin": 0.0,
+        "half_pot_threshold": 0.7,
+        "pot_threshold": 0.85,
+        "allin_threshold": 0.95,
+        "bluff_probability": 0.0,
+        "value_betting": false
+      }
+    },
+    "opponents": {
+      "random": {
+        "kind": "random"
+      },
+      "passive": {
+        "kind": "passive"
+      },
+      "tight": {
+        "kind": "threshold",
+        "call_threshold": 0.5,
+        "raise_threshold": 0.75,
+        "allin_threshold": 0.95
+      },
+      "loose_aggressive": {
+        "kind": "threshold",
+        "call_threshold": 0.3,
+        "raise_threshold": 0.58,
+        "allin_threshold": 0.9
+      }
+    }
+  },
+  "game": {
+    "starting_stacks": [
+      200,
+      200
+    ],
+    "small_blind": 1,
+    "big_blind": 2
+  },
+  "equity": {
+    "samples": 256,
+    "seed": 20261027,
+    "cache_size": 4096
+  },
+  "source_sha256": {
+    "equity.py": "7e56fe9e9541533aab690b8b2d5e7fc6a6c34f384b4f9eb6757e57fcc45905d6",
+    "randomness.py": "24487a923e1e445463fb48e92282252480280f638f223336e5722a21aa56c744",
+    "__init__.py": "eab80e1f5705aea4cd089f294937c77f5f09aee9daffb71e15bb375ea4735cb8",
+    "agents.py": "6b4330c7ad985f935a5e7305246dcc0a2feee4ad18ed9446ffcc5efa018428c6",
+    "equity_audit.py": "6f44fbf3f02cb73d52e66230f9a38e209be57f778b5be109b264fc82cd789467",
+    "environment.py": "b4340c785941752e5c77e284656907d1948d8cc306161fc785471232818be5bf",
+    "traditional_eval.py": "44f7ff6015291d609a65327721da16aefc692f36f9cb65513c8701f2f1e20a76",
+    "traditional.py": "a59e87b93a96c851f33a340e03ba98b2439f0373476aa4f9ca214adef6557023",
+    "match.py": "60872b6c1d29b2501abc3a6272a3d7e646c92b8ac882dd408a5ff8cfcaf150ba"
+  },
+  "preflop_table_sha256": "d9003794a564e2fb1764634f6151689f27470b2387bcef589814675baf3f6f30",
+  "versions": {
+    "pokerkit": "0.7.7",
+    "treys": "0.1.8"
+  }
+}

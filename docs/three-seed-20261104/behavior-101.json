@@ -1,0 +1,394 @@
+{
+  "checkpoint": "artifacts/dqn-three-seed-20261104/seed-101/final.pt",
+  "checkpoint_decisions": 250003,
+  "validation_seed": 20261104,
+  "pairs_per_opponent": 100,
+  "opponents": {
+    "random": {
+      "bb_per_100": 261.5,
+      "counts": {
+        "decisions": 492,
+        "fold": 106,
+        "facing_bet": 370,
+        "effective_allin_raise": 21,
+        "allin_below_50_equity": 3,
+        "raise_below_50_equity": 57,
+        "selected_q_outside_return_bounds": 6,
+        "raise": 104,
+        "call": 171,
+        "check": 59,
+        "bet": 52
+      },
+      "by_street": {
+        "0": {
+          "fold": 42,
+          "raise": 86,
+          "call": 121,
+          "check": 10
+        },
+        "1": {
+          "call": 37,
+          "check": 29,
+          "bet": 28,
+          "fold": 36,
+          "raise": 9
+        },
+        "2": {
+          "fold": 21,
+          "check": 16,
+          "raise": 7,
+          "bet": 16,
+          "call": 10
+        },
+        "3": {
+          "fold": 7,
+          "bet": 8,
+          "raise": 2,
+          "check": 4,
+          "call": 3
+        }
+      },
+      "by_equity": {
+        "30_to_50": {
+          "fold": 45,
+          "raise": 38,
+          "call": 72,
+          "check": 21,
+          "bet": 9
+        },
+        "below_30": {
+          "fold": 23,
+          "bet": 10,
+          "check": 14,
+          "call": 4
+        },
+        "50_to_70": {
+          "call": 74,
+          "check": 17,
+          "fold": 33,
+          "raise": 56,
+          "bet": 14
+        },
+        "at_least_70": {
+          "check": 7,
+          "call": 21,
+          "bet": 19,
+          "fold": 5,
+          "raise": 10
+        }
+      },
+      "mean_equity_by_action": {
+        "fold": 0.4323890568020771,
+        "raise": 0.5384500972353495,
+        "call": 0.5348452638115799,
+        "check": 0.45023625918616683,
+        "bet": 0.5739090121709384
+      }
+    },
+    "passive": {
+      "bb_per_100": 1568.5,
+      "counts": {
+        "decisions": 764,
+        "raise": 117,
+        "facing_bet": 100,
+        "effective_allin_raise": 64,
+        "allin_below_50_equity": 8,
+        "raise_below_50_equity": 205,
+        "selected_q_outside_return_bounds": 3,
+        "check": 263,
+        "bet": 346,
+        "call": 38
+      },
+      "by_street": {
+        "0": {
+          "raise": 117,
+          "check": 45,
+          "call": 38
+        },
+        "1": {
+          "check": 92,
+          "bet": 103
+        },
+        "2": {
+          "check": 81,
+          "bet": 111
+        },
+        "3": {
+          "bet": 132,
+          "check": 45
+        }
+      },
+      "by_equity": {
+        "30_to_50": {
+          "raise": 48,
+          "bet": 78,
+          "call": 19,
+          "check": 86
+        },
+        "below_30": {
+          "check": 64,
+          "bet": 79
+        },
+        "50_to_70": {
+          "check": 69,
+          "bet": 74,
+          "raise": 66,
+          "call": 19
+        },
+        "at_least_70": {
+          "bet": 115,
+          "check": 44,
+          "raise": 3
+        }
+      },
+      "mean_equity_by_action": {
+        "raise": 0.505707266748461,
+        "check": 0.47350141699974757,
+        "bet": 0.5391549390856435,
+        "call": 0.5053052651254755
+      }
+    },
+    "tight": {
+      "bb_per_100": 353.75,
+      "counts": {
+        "decisions": 441,
+        "raise": 104,
+        "facing_bet": 173,
+        "effective_allin_raise": 23,
+        "allin_below_50_equity": 1,
+        "raise_below_50_equity": 90,
+        "selected_q_outside_return_bounds": 1,
+        "check": 130,
+        "bet": 110,
+        "call": 68,
+        "fold": 29
+      },
+      "by_street": {
+        "0": {
+          "raise": 90,
+          "check": 25,
+          "call": 38
+        },
+        "1": {
+          "bet": 54,
+          "call": 18,
+          "check": 51,
+          "fold": 9,
+          "raise": 5
+        },
+        "2": {
+          "check": 35,
+          "call": 8,
+          "bet": 30,
+          "fold": 13,
+          "raise": 6
+        },
+        "3": {
+          "check": 19,
+          "fold": 7,
+          "bet": 26,
+          "raise": 3,
+          "call": 4
+        }
+      },
+      "by_equity": {
+        "30_to_50": {
+          "raise": 42,
+          "call": 28,
+          "bet": 23,
+          "check": 45,
+          "fold": 12
+        },
+        "50_to_70": {
+          "check": 39,
+          "call": 28,
+          "fold": 4,
+          "raise": 50,
+          "bet": 26
+        },
+        "at_least_70": {
+          "bet": 36,
+          "call": 11,
+          "check": 23,
+          "raise": 12,
+          "fold": 5
+        },
+        "below_30": {
+          "check": 23,
+          "bet": 25,
+          "fold": 8,
+          "call": 1
+        }
+      },
+      "mean_equity_by_action": {
+        "raise": 0.5321540938547025,
+        "check": 0.5046966798890096,
+        "bet": 0.5378602793948217,
+        "call": 0.5657414872856701,
+        "fold": 0.44868009306233503
+      }
+    },
+    "loose_aggressive": {
+      "bb_per_100": -162.5,
+      "counts": {
+        "decisions": 754,
+        "raise": 145,
+        "facing_bet": 309,
+        "effective_allin_raise": 44,
+        "allin_below_50_equity": 5,
+        "raise_below_50_equity": 133,
+        "selected_q_outside_return_bounds": 2,
+        "check": 207,
+        "bet": 192,
+        "call": 141,
+        "fold": 69
+      },
+      "by_street": {
+        "0": {
+          "raise": 113,
+          "call": 71,
+          "check": 36
+        },
+        "1": {
+          "check": 79,
+          "bet": 80,
+          "call": 46,
+          "raise": 7,
+          "fold": 24
+        },
+        "2": {
+          "check": 61,
+          "fold": 24,
+          "call": 20,
+          "bet": 59,
+          "raise": 20
+        },
+        "3": {
+          "bet": 53,
+          "call": 4,
+          "fold": 21,
+          "check": 31,
+          "raise": 5
+        }
+      },
+      "by_equity": {
+        "30_to_50": {
+          "raise": 51,
+          "bet": 43,
+          "call": 55,
+          "check": 67,
+          "fold": 21
+        },
+        "below_30": {
+          "check": 41,
+          "bet": 39,
+          "fold": 29,
+          "call": 5
+        },
+        "50_to_70": {
+          "call": 55,
+          "check": 56,
+          "fold": 13,
+          "raise": 70,
+          "bet": 46
+        },
+        "at_least_70": {
+          "check": 43,
+          "call": 26,
+          "bet": 64,
+          "raise": 24,
+          "fold": 6
+        }
+      },
+      "mean_equity_by_action": {
+        "raise": 0.5524080249769935,
+        "check": 0.5034411991743938,
+        "bet": 0.5505269377414758,
+        "call": 0.5497301070825428,
+        "fold": 0.39941489070221997
+      }
+    },
+    "traditional": {
+      "bb_per_100": -193.5,
+      "counts": {
+        "decisions": 730,
+        "raise": 138,
+        "facing_bet": 229,
+        "effective_allin_raise": 45,
+        "allin_below_50_equity": 6,
+        "raise_below_50_equity": 150,
+        "selected_q_outside_return_bounds": 3,
+        "bet": 227,
+        "check": 220,
+        "call": 91,
+        "fold": 54
+      },
+      "by_street": {
+        "0": {
+          "raise": 116,
+          "check": 45,
+          "call": 41
+        },
+        "1": {
+          "bet": 86,
+          "call": 29,
+          "raise": 5,
+          "check": 78,
+          "fold": 14
+        },
+        "2": {
+          "check": 62,
+          "call": 18,
+          "bet": 77,
+          "raise": 11,
+          "fold": 21
+        },
+        "3": {
+          "check": 35,
+          "fold": 19,
+          "bet": 64,
+          "raise": 6,
+          "call": 3
+        }
+      },
+      "by_equity": {
+        "30_to_50": {
+          "raise": 49,
+          "bet": 51,
+          "call": 34,
+          "check": 74,
+          "fold": 14
+        },
+        "50_to_70": {
+          "check": 58,
+          "call": 36,
+          "fold": 11,
+          "raise": 69,
+          "bet": 53
+        },
+        "at_least_70": {
+          "bet": 74,
+          "call": 18,
+          "raise": 19,
+          "check": 40,
+          "fold": 5
+        },
+        "below_30": {
+          "bet": 49,
+          "raise": 1,
+          "fold": 24,
+          "check": 48,
+          "call": 3
+        }
+      },
+      "mean_equity_by_action": {
+        "raise": 0.5402610025544098,
+        "bet": 0.5427796523115446,
+        "check": 0.48492094910788264,
+        "call": 0.5652427545615605,
+        "fold": 0.3912234324272032
+      }
+    }
+  },
+  "limits": "Descriptive on-policy validation states, not counterfactual action EVs. Weak-equity aggression can sometimes be a rational bluff; these counts alone do not prove an error."
+}

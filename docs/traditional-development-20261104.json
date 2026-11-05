@@ -1,0 +1,216 @@
+{
+  "purpose": "development comparison, not final held-out performance",
+  "seed": 20261104,
+  "pairs_per_matchup": 250,
+  "total_hands": 6000,
+  "matchups": {
+    "no_bluff": {
+      "random": {
+        "bb_per_100": 1019.2,
+        "ci95": [
+          661.365,
+          1361.6049999999998
+        ],
+        "difference_vs_no_bluff": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "passive": {
+        "bb_per_100": 211.2,
+        "ci95": [
+          153.995,
+          271.805
+        ],
+        "difference_vs_no_bluff": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "tight": {
+        "bb_per_100": -23.0,
+        "ci95": [
+          -116.81,
+          71.50249999999998
+        ],
+        "difference_vs_no_bluff": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "loose_aggressive": {
+        "bb_per_100": 203.6,
+        "ci95": [
+          104.58999999999999,
+          315.2
+        ],
+        "difference_vs_no_bluff": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bluff_05": {
+      "random": {
+        "bb_per_100": 1042.8,
+        "ci95": [
+          684.35,
+          1390.3274999999999
+        ],
+        "difference_vs_no_bluff": 23.6,
+        "difference_ci95": [
+          0.0,
+          69.2
+        ]
+      },
+      "passive": {
+        "bb_per_100": 214.6,
+        "ci95": [
+          159.38500000000002,
+          274.4099999999999
+        ],
+        "difference_vs_no_bluff": 3.4,
+        "difference_ci95": [
+          -1.8,
+          9.6
+        ]
+      },
+      "tight": {
+        "bb_per_100": -40.8,
+        "ci95": [
+          -129.9025,
+          43.604999999999976
+        ],
+        "difference_vs_no_bluff": -17.8,
+        "difference_ci95": [
+          -58.4,
+          3.6
+        ]
+      },
+      "loose_aggressive": {
+        "bb_per_100": 202.6,
+        "ci95": [
+          102.6,
+          313.605
+        ],
+        "difference_vs_no_bluff": -1.0,
+        "difference_ci95": [
+          -3.4,
+          1.2
+        ]
+      }
+    },
+    "pot_odds": {
+      "random": {
+        "bb_per_100": 1062.0,
+        "ci95": [
+          707.8725,
+          1401.0674999999997
+        ],
+        "difference_vs_no_bluff": 42.8,
+        "difference_ci95": [
+          -206.015,
+          303.005
+        ]
+      },
+      "passive": {
+        "bb_per_100": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "difference_vs_no_bluff": -211.2,
+        "difference_ci95": [
+          -270.61,
+          -156.79000000000008
+        ]
+      },
+      "tight": {
+        "bb_per_100": -35.8,
+        "ci95": [
+          -55.205000000000005,
+          -17.3
+        ],
+        "difference_vs_no_bluff": -12.8,
+        "difference_ci95": [
+          -101.025,
+          77.4
+        ]
+      },
+      "loose_aggressive": {
+        "bb_per_100": -104.8,
+        "ci95": [
+          -131.4,
+          -80.2
+        ],
+        "difference_vs_no_bluff": -308.4,
+        "difference_ci95": [
+          -432.6,
+          -200.59500000000003
+        ]
+      }
+    }
+  },
+  "selected_policy": "no_bluff",
+  "bluff_improvement_bb_per_100": 2.05,
+  "bluff_improvement_ci95": [
+    -11.10125,
+    17.65124999999999
+  ],
+  "selection_rule": "Select bluff_05 only if the lower paired-bootstrap 95% interval for its equally weighted mean improvement over no_bluff is above zero; otherwise retain no_bluff. Pot_odds is an ablation, not a candidate.",
+  "reason_counts": {
+    "no_bluff": {
+      "check_free": 3741,
+      "fold_below_call_threshold": 365,
+      "call_pot_odds": 2096,
+      "value_half_pot": 683,
+      "value_pot": 345
+    },
+    "bluff_05": {
+      "check_free": 3638,
+      "fold_below_call_threshold": 365,
+      "call_pot_odds": 2094,
+      "value_half_pot": 683,
+      "value_pot": 341,
+      "bluff_checked_to": 83
+    },
+    "pot_odds": {
+      "check_free": 4697,
+      "fold_below_call_threshold": 329,
+      "call_pot_odds": 2399
+    }
+  },
+  "action_counts": {
+    "no_bluff": {
+      "check": 3741,
+      "fold": 365,
+      "call": 2096,
+      "raise": 290,
+      "bet": 738
+    },
+    "bluff_05": {
+      "check": 3638,
+      "fold": 365,
+      "call": 2094,
+      "raise": 286,
+      "bet": 821
+    },
+    "pot_odds": {
+      "check": 4697,
+      "fold": 329,
+      "call": 2399
+    }
+  },
+  "hero_latency_median_ms": {
+    "no_bluff": 0.009708048310130835,
+    "bluff_05": 0.009375042282044888,
+    "pot_odds": 0.00829098280519247
+  },
+  "latency_caveat": "Shared warm cache and fixed policy order; these are diagnostics, not fair speed comparisons.",
+  "elapsed_seconds": 21.481878916965798,
+  "limitations": "Small fixed development budget. Percentile intervals resample whole deal groups. Tuning performance is optimistic; final held-out evaluation remains pending."
+}

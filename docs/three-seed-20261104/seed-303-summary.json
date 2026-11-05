@@ -1,0 +1,288 @@
+{
+  "purpose": "single-seed development training; not final held-out evaluation",
+  "seed": 303,
+  "requested_decisions": 250000,
+  "actual_decisions": 250003,
+  "hands": 93609,
+  "no_decision_hands": 9095,
+  "terminal_transitions": 84514,
+  "gradient_updates": 61251,
+  "epsilon_end_of_pilot": 0.050000000000000044,
+  "parameters": 38278,
+  "replay_entries": 50000,
+  "replay_capacity": 50000,
+  "replay_allocated_bytes": 66450000,
+  "training_seconds": 1663.3021487909136,
+  "decisions_per_second": 150.3052227652877,
+  "intermediate_validation_seconds": 55.08788104203995,
+  "validation_seed": 20261104,
+  "peak_process_rss_bytes": 296730624,
+  "mean_first_100_update_loss": 0.07801580872386694,
+  "mean_last_100_update_loss": 0.021688320599496366,
+  "opponent_hand_counts": {
+    "loose_aggressive": 32658,
+    "tight": 32650,
+    "random": 9346,
+    "passive": 18955
+  },
+  "training_action_slot_counts": {
+    "1": 84224,
+    "4": 45827,
+    "0": 16641,
+    "2": 53268,
+    "5": 27464,
+    "3": 22579
+  },
+  "validation_pairs_per_opponent": 100,
+  "validation": {
+    "traditional": {
+      "random": {
+        "bb_per_100": 613.0,
+        "ci95": [
+          72.68125,
+          1149.5624999999995
+        ],
+        "difference_vs_traditional": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "passive": {
+        "bb_per_100": 223.0,
+        "ci95": [
+          142.0,
+          310.01249999999993
+        ],
+        "difference_vs_traditional": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "tight": {
+        "bb_per_100": 130.25,
+        "ci95": [
+          -93.7625,
+          385.3937499999992
+        ],
+        "difference_vs_traditional": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "loose_aggressive": {
+        "bb_per_100": 252.5,
+        "ci95": [
+          86.0,
+          455.01249999999993
+        ],
+        "difference_vs_traditional": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "traditional": {
+        "bb_per_100": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "difference_vs_traditional": 0.0,
+        "difference_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "initial": {
+      "random": {
+        "bb_per_100": 591.5,
+        "ci95": [
+          -121.1,
+          1332.75
+        ],
+        "difference_vs_traditional": -21.5,
+        "difference_ci95": [
+          -854.55,
+          790.6124999999994
+        ]
+      },
+      "passive": {
+        "bb_per_100": -265.5,
+        "ci95": [
+          -806.5375,
+          323.0
+        ],
+        "difference_vs_traditional": -488.5,
+        "difference_ci95": [
+          -1050.55,
+          89.51249999999993
+        ]
+      },
+      "tight": {
+        "bb_per_100": -1010.75,
+        "ci95": [
+          -1599.075,
+          -390.21875000000017
+        ],
+        "difference_vs_traditional": -1141.0,
+        "difference_ci95": [
+          -1671.55,
+          -617.4875000000001
+        ]
+      },
+      "loose_aggressive": {
+        "bb_per_100": -1967.0,
+        "ci95": [
+          -2562.5375,
+          -1339.4875000000002
+        ],
+        "difference_vs_traditional": -2219.5,
+        "difference_ci95": [
+          -2815.5,
+          -1589.4375000000005
+        ]
+      },
+      "traditional": {
+        "bb_per_100": -1700.0,
+        "ci95": [
+          -2299.125,
+          -1067.7250000000015
+        ],
+        "difference_vs_traditional": -1700.0,
+        "difference_ci95": [
+          -2323.5125,
+          -1057.8750000000007
+        ]
+      }
+    },
+    "final": {
+      "random": {
+        "bb_per_100": -9.5,
+        "ci95": [
+          -457.0125,
+          469.58124999999956
+        ],
+        "difference_vs_traditional": -622.5,
+        "difference_ci95": [
+          -1213.05,
+          -31.28750000000116
+        ]
+      },
+      "passive": {
+        "bb_per_100": 1348.0,
+        "ci95": [
+          835.3,
+          1862.5499999999997
+        ],
+        "difference_vs_traditional": 1125.0,
+        "difference_ci95": [
+          620.0,
+          1628.0375
+        ]
+      },
+      "tight": {
+        "bb_per_100": 220.75,
+        "ci95": [
+          -145.075,
+          590.5374999999998
+        ],
+        "difference_vs_traditional": 90.5,
+        "difference_ci95": [
+          -291.1,
+          489.01249999999993
+        ]
+      },
+      "loose_aggressive": {
+        "bb_per_100": -58.0,
+        "ci95": [
+          -437.5125,
+          310.5
+        ],
+        "difference_vs_traditional": -310.5,
+        "difference_ci95": [
+          -731.5375,
+          92.56249999999966
+        ]
+      },
+      "traditional": {
+        "bb_per_100": -82.0,
+        "ci95": [
+          -476.0375,
+          331.5
+        ],
+        "difference_vs_traditional": -82.0,
+        "difference_ci95": [
+          -487.0125,
+          309.06249999999966
+        ]
+      }
+    },
+    "final_vs_initial": {
+      "random": {
+        "bb_per_100": -9.5,
+        "ci95": [
+          -457.0125,
+          469.58124999999956
+        ],
+        "difference_ci95": [
+          -1406.6875,
+          245.04999999999973
+        ],
+        "difference_vs_initial": -601.0
+      },
+      "passive": {
+        "bb_per_100": 1348.0,
+        "ci95": [
+          835.3,
+          1862.5499999999997
+        ],
+        "difference_ci95": [
+          776.475,
+          2393.5249999999996
+        ],
+        "difference_vs_initial": 1613.5
+      },
+      "tight": {
+        "bb_per_100": 220.75,
+        "ci95": [
+          -145.075,
+          590.5374999999998
+        ],
+        "difference_ci95": [
+          671.95,
+          1793.0999999999995
+        ],
+        "difference_vs_initial": 1231.5
+      },
+      "loose_aggressive": {
+        "bb_per_100": -58.0,
+        "ci95": [
+          -437.5125,
+          310.5
+        ],
+        "difference_ci95": [
+          1146.95,
+          2587.5
+        ],
+        "difference_vs_initial": 1909.0
+      },
+      "traditional": {
+        "bb_per_100": -82.0,
+        "ci95": [
+          -476.0375,
+          331.5
+        ],
+        "difference_ci95": [
+          862.9875,
+          2317.5125
+        ],
+        "difference_vs_initial": 1618.0
+      }
+    }
+  },
+  "limitations": "Training throughput excludes validation; RSS is the entire process high-water mark. Training loss is not playing strength. One seed and reused validation deals do not establish generalization, convergence or superiority. No final-test deals were used."
+}

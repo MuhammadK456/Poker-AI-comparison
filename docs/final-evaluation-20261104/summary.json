@@ -1,0 +1,596 @@
+{
+  "pairs_per_matchup": 10000,
+  "played_hands": 400000,
+  "evaluation_seconds": 1920.260493083042,
+  "wall_seconds": 1925.8333281669766,
+  "results": {
+    "seed-101": {
+      "random": {
+        "bb_per_100": 174.9925,
+        "intervals": {
+          "0.95": [
+            129.22475000000003,
+            222.44599999999997
+          ]
+        },
+        "difference_vs_traditional": -860.84,
+        "difference_intervals": {
+          "0.95": [
+            -921.03725,
+            -797.628375
+          ]
+        },
+        "pair_return_sd_bb_per_100": 2389.2002093185433,
+        "decisions": 50509,
+        "decision_latency_ms_mean": 1.771946382981251,
+        "decision_latency_ms_median": 0.088583,
+        "decision_latency_ms_p95": 5.619208599999998,
+        "actions": {
+          "raise": 9728,
+          "call": 18271,
+          "fold": 11834,
+          "bet": 5030,
+          "check": 5646
+        }
+      },
+      "passive": {
+        "bb_per_100": 1228.875,
+        "intervals": {
+          "0.95": [
+            1174.0662499999999,
+            1281.76675
+          ]
+        },
+        "difference_vs_traditional": 1001.31,
+        "difference_intervals": {
+          "0.95": [
+            948.873,
+            1053.9503750000001
+          ]
+        },
+        "pair_return_sd_bb_per_100": 2796.471528493714,
+        "decisions": 73791,
+        "decision_latency_ms_mean": 4.282256643940317,
+        "decision_latency_ms_median": 4.548292,
+        "decision_latency_ms_p95": 8.344708,
+        "actions": {
+          "check": 23729,
+          "bet": 34460,
+          "raise": 10961,
+          "call": 4641
+        }
+      },
+      "tight": {
+        "bb_per_100": 30.9475,
+        "intervals": {
+          "0.95": [
+            -3.951749999999992,
+            66.47962499999996
+          ]
+        },
+        "difference_vs_traditional": 94.945,
+        "difference_intervals": {
+          "0.95": [
+            58.404,
+            133.11775
+          ]
+        },
+        "pair_return_sd_bb_per_100": 1791.270479223259,
+        "decisions": 41824,
+        "decision_latency_ms_mean": 2.326565465976473,
+        "decision_latency_ms_median": 0.0900835,
+        "decision_latency_ms_p95": 7.4558687,
+        "actions": {
+          "check": 10884,
+          "bet": 12389,
+          "raise": 9150,
+          "call": 6765,
+          "fold": 2636
+        }
+      },
+      "loose_aggressive": {
+        "bb_per_100": -12.21,
+        "intervals": {
+          "0.95": [
+            -50.740249999999975,
+            26.162749999999903
+          ]
+        },
+        "difference_vs_traditional": -227.18,
+        "difference_intervals": {
+          "0.95": [
+            -269.46975,
+            -185.64362500000001
+          ]
+        },
+        "pair_return_sd_bb_per_100": 1946.5651356897226,
+        "decisions": 69764,
+        "decision_latency_ms_mean": 1.984587552849607,
+        "decision_latency_ms_median": 0.076416,
+        "decision_latency_ms_p95": 7.85295885,
+        "actions": {
+          "check": 17237,
+          "bet": 19799,
+          "raise": 13135,
+          "call": 13057,
+          "fold": 6536
+        }
+      },
+      "traditional": {
+        "bb_per_100": -19.32,
+        "intervals": {
+          "0.95": [
+            -56.610125,
+            17.676874999999974
+          ],
+          "0.9833333333333333": [
+            -64.5085,
+            26.168375000000005
+          ]
+        },
+        "difference_vs_traditional": -19.32,
+        "difference_intervals": {
+          "0.95": [
+            -56.610125,
+            17.676874999999974
+          ],
+          "0.9833333333333333": [
+            -64.5085,
+            26.168375000000005
+          ]
+        },
+        "pair_return_sd_bb_per_100": 1900.6621186441648,
+        "decisions": 68256,
+        "decision_latency_ms_mean": 2.2160649390822784,
+        "decision_latency_ms_median": 0.078459,
+        "decision_latency_ms_p95": 8.02167725,
+        "actions": {
+          "check": 19402,
+          "bet": 23759,
+          "raise": 12492,
+          "call": 8107,
+          "fold": 4496
+        }
+      }
+    },
+    "seed-202": {
+      "random": {
+        "bb_per_100": 300.2875,
+        "intervals": {
+          "0.95": [
+            251.160375,
+            348.615875
+          ]
+        },
+        "difference_vs_traditional": -735.545,
+        "difference_intervals": {
+          "0.95": [
+            -797.3813749999999,
+            -671.64225
+          ]
+        },
+        "pair_return_sd_bb_per_100": 2558.5810009686234,
+        "decisions": 50049,
+        "decision_latency_ms_mean": 1.6803017388159605,
+        "decision_latency_ms_median": 0.087834,
+        "decision_latency_ms_p95": 5.2712252,
+        "actions": {
+          "call": 20123,
+          "fold": 11764,
+          "raise": 7761,
+          "check": 5752,
+          "bet": 4649
+        }
+      },
+      "passive": {
+        "bb_per_100": 965.01,
+        "intervals": {
+          "0.95": [
+            911.0564999999999,
+            1022.5965
+          ]
+        },
+        "difference_vs_traditional": 737.445,
+        "difference_intervals": {
+          "0.95": [
+            683.675125,
+            792.41
+          ]
+        },
+        "pair_return_sd_bb_per_100": 2795.627166312651,
+        "decisions": 73020,
+        "decision_latency_ms_mean": 4.280621559846617,
+        "decision_latency_ms_median": 4.553416,
+        "decision_latency_ms_p95": 8.345260450000001,
+        "actions": {
+          "check": 24364,
+          "bet": 34327,
+          "call": 7685,
+          "raise": 6644
+        }
+      },
+      "tight": {
+        "bb_per_100": 24.4275,
+        "intervals": {
+          "0.95": [
+            -10.583124999999995,
+            59.462687499999994
+          ]
+        },
+        "difference_vs_traditional": 88.425,
+        "difference_intervals": {
+          "0.95": [
+            50.083875000000006,
+            126.776375
+          ]
+        },
+        "pair_return_sd_bb_per_100": 1817.1093248270968,
+        "decisions": 45213,
+        "decision_latency_ms_mean": 2.3922057477053063,
+        "decision_latency_ms_median": 0.081083,
+        "decision_latency_ms_p95": 7.674633,
+        "actions": {
+          "check": 13601,
+          "bet": 13365,
+          "call": 9445,
+          "fold": 2964,
+          "raise": 5838
+        }
+      },
+      "loose_aggressive": {
+        "bb_per_100": 28.655,
+        "intervals": {
+          "0.95": [
+            -11.058374999999995,
+            66.06575
+          ]
+        },
+        "difference_vs_traditional": -186.315,
+        "difference_intervals": {
+          "0.95": [
+            -226.566,
+            -145.31825
+          ]
+        },
+        "pair_return_sd_bb_per_100": 1935.3444646353473,
+        "decisions": 68868,
+        "decision_latency_ms_mean": 1.9809092120868907,
+        "decision_latency_ms_median": 0.076208,
+        "decision_latency_ms_p95": 7.8513603,
+        "actions": {
+          "check": 18354,
+          "bet": 18957,
+          "call": 14929,
+          "fold": 6841,
+          "raise": 9787
+        }
+      },
+      "traditional": {
+        "bb_per_100": 5.275,
+        "intervals": {
+          "0.95": [
+            -31.120749999999994,
+            42.545249999999996
+          ],
+          "0.9833333333333333": [
+            -39.59037499999999,
+            51.59850000000024
+          ]
+        },
+        "difference_vs_traditional": 5.275,
+        "difference_intervals": {
+          "0.95": [
+            -31.120749999999994,
+            42.545249999999996
+          ],
+          "0.9833333333333333": [
+            -39.59037499999999,
+            51.59850000000024
+          ]
+        },
+        "pair_return_sd_bb_per_100": 1887.8193267778713,
+        "decisions": 67637,
+        "decision_latency_ms_mean": 2.2604359573754005,
+        "decision_latency_ms_median": 0.084625,
+        "decision_latency_ms_p95": 8.094183600000001,
+        "actions": {
+          "check": 20814,
+          "bet": 23083,
+          "call": 10389,
+          "fold": 4773,
+          "raise": 8578
+        }
+      }
+    },
+    "seed-303": {
+      "random": {
+        "bb_per_100": 226.4625,
+        "intervals": {
+          "0.95": [
+            179.199625,
+            273.58818749999995
+          ]
+        },
+        "difference_vs_traditional": -809.37,
+        "difference_intervals": {
+          "0.95": [
+            -870.945375,
+            -746.764
+          ]
+        },
+        "pair_return_sd_bb_per_100": 2400.9310945143366,
+        "decisions": 48429,
+        "decision_latency_ms_mean": 1.5735305918354703,
+        "decision_latency_ms_median": 0.084875,
+        "decision_latency_ms_p95": 5.03475,
+        "actions": {
+          "raise": 9570,
+          "fold": 11974,
+          "call": 17355,
+          "bet": 5083,
+          "check": 4447
+        }
+      },
+      "passive": {
+        "bb_per_100": 1064.67,
+        "intervals": {
+          "0.95": [
+            1012.3107500000001,
+            1115.6725000000001
+          ]
+        },
+        "difference_vs_traditional": 837.105,
+        "difference_intervals": {
+          "0.95": [
+            785.748625,
+            887.7495
+          ]
+        },
+        "pair_return_sd_bb_per_100": 2730.1633046883894,
+        "decisions": 74029,
+        "decision_latency_ms_mean": 4.126004905847707,
+        "decision_latency_ms_median": 4.478667,
+        "decision_latency_ms_p95": 8.1629416,
+        "actions": {
+          "raise": 11617,
+          "bet": 38193,
+          "call": 5482,
+          "check": 18737
+        }
+      },
+      "tight": {
+        "bb_per_100": -14.6875,
+        "intervals": {
+          "0.95": [
+            -49.425062499999996,
+            22.180749999999982
+          ]
+        },
+        "difference_vs_traditional": 49.31,
+        "difference_intervals": {
+          "0.95": [
+            12.51425000000001,
+            88.38612499999999
+          ]
+        },
+        "pair_return_sd_bb_per_100": 1767.5163369100367,
+        "decisions": 41359,
+        "decision_latency_ms_mean": 2.320744188205711,
+        "decision_latency_ms_median": 0.078875,
+        "decision_latency_ms_p95": 7.6975536,
+        "actions": {
+          "raise": 9194,
+          "bet": 13667,
+          "call": 6948,
+          "fold": 2835,
+          "check": 8715
+        }
+      },
+      "loose_aggressive": {
+        "bb_per_100": 8.275,
+        "intervals": {
+          "0.95": [
+            -30.943624999999994,
+            48.940999999999995
+          ]
+        },
+        "difference_vs_traditional": -206.695,
+        "difference_intervals": {
+          "0.95": [
+            -250.308875,
+            -161.95487500000007
+          ]
+        },
+        "pair_return_sd_bb_per_100": 2001.5559939743632,
+        "decisions": 67076,
+        "decision_latency_ms_mean": 1.9958951918271812,
+        "decision_latency_ms_median": 0.077333,
+        "decision_latency_ms_p95": 7.9735525,
+        "actions": {
+          "raise": 13712,
+          "bet": 20689,
+          "call": 11981,
+          "fold": 6945,
+          "check": 13749
+        }
+      },
+      "traditional": {
+        "bb_per_100": -16.06,
+        "intervals": {
+          "0.95": [
+            -53.12762499999997,
+            22.125124999999997
+          ],
+          "0.9833333333333333": [
+            -60.79199999999999,
+            30.22037500000005
+          ]
+        },
+        "difference_vs_traditional": -16.06,
+        "difference_intervals": {
+          "0.95": [
+            -53.12762499999997,
+            22.125124999999997
+          ],
+          "0.9833333333333333": [
+            -60.79199999999999,
+            30.22037500000005
+          ]
+        },
+        "pair_return_sd_bb_per_100": 1910.814145193024,
+        "decisions": 66618,
+        "decision_latency_ms_mean": 2.233252377180342,
+        "decision_latency_ms_median": 0.083583,
+        "decision_latency_ms_p95": 8.065423299999999,
+        "actions": {
+          "raise": 13382,
+          "bet": 25296,
+          "call": 7806,
+          "fold": 4824,
+          "check": 15310
+        }
+      }
+    },
+    "traditional": {
+      "random": {
+        "bb_per_100": 1035.8325,
+        "intervals": {
+          "0.95": [
+            981.3530000000001,
+            1090.7876250000002
+          ]
+        },
+        "difference_vs_traditional": 0.0,
+        "difference_intervals": {
+          "0.95": [
+            0.0,
+            0.0
+          ]
+        },
+        "pair_return_sd_bb_per_100": 2860.84334801994,
+        "decisions": 61812,
+        "decision_latency_ms_mean": 2.2641821142658385,
+        "decision_latency_ms_median": 0.014625,
+        "decision_latency_ms_p95": 8.01716645,
+        "actions": {
+          "call": 32776,
+          "fold": 8838,
+          "check": 13668,
+          "raise": 4011,
+          "bet": 2519
+        }
+      },
+      "passive": {
+        "bb_per_100": 227.565,
+        "intervals": {
+          "0.95": [
+            218.864125,
+            236.341125
+          ]
+        },
+        "difference_vs_traditional": 0.0,
+        "difference_intervals": {
+          "0.95": [
+            0.0,
+            0.0
+          ]
+        },
+        "pair_return_sd_bb_per_100": 452.5813780585504,
+        "decisions": 80000,
+        "decision_latency_ms_mean": 4.08728536915,
+        "decision_latency_ms_median": 4.241,
+        "decision_latency_ms_p95": 7.81371105,
+        "actions": {
+          "check": 55001,
+          "call": 9738,
+          "bet": 14737,
+          "raise": 524
+        }
+      },
+      "tight": {
+        "bb_per_100": -63.9975,
+        "intervals": {
+          "0.95": [
+            -81.857,
+            -47.41050000000001
+          ]
+        },
+        "difference_vs_traditional": 0.0,
+        "difference_intervals": {
+          "0.95": [
+            0.0,
+            0.0
+          ]
+        },
+        "pair_return_sd_bb_per_100": 882.7188407125594,
+        "decisions": 59635,
+        "decision_latency_ms_mean": 2.551336791146139,
+        "decision_latency_ms_median": 0.013459,
+        "decision_latency_ms_p95": 7.8964713,
+        "actions": {
+          "check": 33630,
+          "call": 15398,
+          "fold": 1606,
+          "bet": 6114,
+          "raise": 2887
+        }
+      },
+      "loose_aggressive": {
+        "bb_per_100": 214.97,
+        "intervals": {
+          "0.95": [
+            195.63725,
+            234.782875
+          ]
+        },
+        "difference_vs_traditional": 0.0,
+        "difference_intervals": {
+          "0.95": [
+            0.0,
+            0.0
+          ]
+        },
+        "pair_return_sd_bb_per_100": 990.4930624444954,
+        "decisions": 88324,
+        "decision_latency_ms_mean": 1.761513201451474,
+        "decision_latency_ms_median": 0.011291,
+        "decision_latency_ms_p95": 7.95561885,
+        "actions": {
+          "check": 44231,
+          "call": 26252,
+          "bet": 8607,
+          "fold": 3212,
+          "raise": 6022
+        }
+      },
+      "traditional": {
+        "bb_per_100": 0.0,
+        "intervals": {
+          "0.95": [
+            0.0,
+            0.0
+          ]
+        },
+        "difference_vs_traditional": 0.0,
+        "difference_intervals": {
+          "0.95": [
+            0.0,
+            0.0
+          ]
+        },
+        "pair_return_sd_bb_per_100": 0.0,
+        "decisions": 82997,
+        "decision_latency_ms_mean": 1.8060041040519537,
+        "decision_latency_ms_median": 0.011209,
+        "decision_latency_ms_p95": 7.9580914,
+        "actions": {
+          "check": 48743,
+          "call": 17657,
+          "bet": 10026,
+          "fold": 2623,
+          "raise": 3948
+        }
+      }
+    }
+  }
+}

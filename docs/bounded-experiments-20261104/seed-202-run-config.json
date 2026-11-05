@@ -1,0 +1,93 @@
+{
+  "seed": 202,
+  "requested_decisions": 250000,
+  "validation_pairs": 100,
+  "include_equity": false,
+  "dqn": {
+    "learning_rate": 0.0003,
+    "batch_size": 128,
+    "replay_capacity": 50000,
+    "warmup": 5000,
+    "update_every": 4,
+    "target_every": 1000,
+    "gamma": 1.0,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay": 100000,
+    "gradient_clip": 10.0
+  },
+  "equity": {
+    "samples": 256,
+    "seed": 20261027,
+    "cache_size": 4096
+  },
+  "feature_version": "visible-163-v1",
+  "opponent_mixture": {
+    "random": 0.1,
+    "passive": 0.2,
+    "tight": 0.35,
+    "loose_aggressive": 0.35
+  },
+  "threshold_opponents": {
+    "tight": {
+      "call_threshold": 0.5,
+      "raise_threshold": 0.75,
+      "allin_threshold": 0.95
+    },
+    "loose_aggressive": {
+      "call_threshold": 0.3,
+      "raise_threshold": 0.58,
+      "allin_threshold": 0.9
+    }
+  },
+  "traditional_snapshot": {
+    "policy": "no_bluff",
+    "config": {
+      "base_margin": 0.03,
+      "position_margin": 0.02,
+      "repeated_raise_margin": 0.02,
+      "half_pot_threshold": 0.7,
+      "pot_threshold": 0.85,
+      "allin_threshold": 0.95,
+      "bluff_probability": 0.0,
+      "value_betting": true
+    },
+    "development_seed": 20261104,
+    "status": "frozen after predeclared development comparison; not final-test validated"
+  },
+  "threads": 1,
+  "device": "cpu",
+  "validation_every": 25000,
+  "validation_seed": 20261104,
+  "source_sha256": {
+    "equity.py": "7e56fe9e9541533aab690b8b2d5e7fc6a6c34f384b4f9eb6757e57fcc45905d6",
+    "learning_env.py": "d7a499fa8f4a94e040b6fc998b0f8624ff363a29d13b3e963a2cf17bc42ba1e5",
+    "randomness.py": "24487a923e1e445463fb48e92282252480280f638f223336e5722a21aa56c744",
+    "__init__.py": "eab80e1f5705aea4cd089f294937c77f5f09aee9daffb71e15bb375ea4735cb8",
+    "features.py": "1019c7df78fcd51d4af78f7ca533a3df6a7c0fbccfe04b14e084fbc50622e180",
+    "agents.py": "6b4330c7ad985f935a5e7305246dcc0a2feee4ad18ed9446ffcc5efa018428c6",
+    "diagnose.py": "584df6361eca8367c8cfdd548c33c31bed60334d5b32e0affb3f0aad0f9c98cd",
+    "replay.py": "fba91edabc9510405966525d4bfeaf48af0aa061d91bfb6b824f5d3b29020b37",
+    "equity_audit.py": "6f44fbf3f02cb73d52e66230f9a38e209be57f778b5be109b264fc82cd789467",
+    "train.py": "ef89966c9b272ca9721d697b9a3bf5202c3116227f3e086c5f562682d2d6c4bd",
+    "environment.py": "b4340c785941752e5c77e284656907d1948d8cc306161fc785471232818be5bf",
+    "evaluate.py": "c47b58bc67cfa3517b81f383991e54efe4d4cc769733fb1e4174fffd44339b7e",
+    "evaluation_report.py": "10e1307ace257321a30d1dc9be7c6478eb4c61ce949f59840e280ce741ccf69c",
+    "traditional_eval.py": "44f7ff6015291d609a65327721da16aefc692f36f9cb65513c8701f2f1e20a76",
+    "traditional.py": "a59e87b93a96c851f33a340e03ba98b2439f0373476aa4f9ca214adef6557023",
+    "dqn.py": "3b65b82b943daf7c3882c3e5e891e6bed6170d87dd741b51e4dc0ed744b7e45b",
+    "study_report.py": "36f7b5f03df67068033e3ad0a63a59b9624a214ad7a90382cbc8d0e5eca42aef",
+    "study.py": "c03da36b45bf635ae516318e5dfa9eda09acaeccf67da0676610630b3e689e76",
+    "match.py": "60872b6c1d29b2501abc3a6272a3d7e646c92b8ac882dd408a5ff8cfcaf150ba"
+  },
+  "preflop_sha256": "d9003794a564e2fb1764634f6151689f27470b2387bcef589814675baf3f6f30",
+  "runtime": {
+    "python": "3.11.9",
+    "torch": "2.14.1",
+    "numpy": "2.4.6",
+    "pokerkit": "0.7.7",
+    "treys": "0.1.8",
+    "platform": "macOS-14.2.1-arm64-arm-64bit"
+  },
+  "checkpoint_selection": "Fixed final budget; intermediate validation is descriptive, no best-checkpoint search"
+}

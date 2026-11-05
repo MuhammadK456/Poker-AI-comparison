@@ -1,0 +1,167 @@
+{
+  "pairs_per_matchup": 2000,
+  "played_hands": 48000,
+  "wall_seconds": 308.8214053749107,
+  "results": {
+    "seed-101": {
+      "matchups": {
+        "tighter": {
+          "bb_per_100": -15.5625,
+          "ci95": [
+            -76.03437500000001,
+            43.479062499999976
+          ],
+          "difference_vs_traditional": 28.725,
+          "difference_ci95": [
+            -29.208125,
+            87.75874999999995
+          ]
+        },
+        "looser": {
+          "bb_per_100": -3.75,
+          "ci95": [
+            -95.47749999999999,
+            82.36374999999992
+          ],
+          "difference_vs_traditional": -408.475,
+          "difference_ci95": [
+            -506.20687499999997,
+            -308.95
+          ]
+        },
+        "bluffing_rules": {
+          "bb_per_100": 48.75,
+          "ci95": [
+            -34.901875,
+            130.81249999999994
+          ],
+          "difference_vs_traditional": 45.65,
+          "difference_ci95": [
+            -40.63625,
+            128.88499999999993
+          ]
+        }
+      }
+    },
+    "seed-202": {
+      "matchups": {
+        "tighter": {
+          "bb_per_100": 6.1875,
+          "ci95": [
+            -56.4384375,
+            62.30343749999998
+          ],
+          "difference_vs_traditional": 50.475,
+          "difference_ci95": [
+            -7.6575,
+            109.60249999999998
+          ]
+        },
+        "looser": {
+          "bb_per_100": 86.9,
+          "ci95": [
+            -6.778125,
+            178.67625
+          ],
+          "difference_vs_traditional": -317.825,
+          "difference_ci95": [
+            -414.388125,
+            -221.320625
+          ]
+        },
+        "bluffing_rules": {
+          "bb_per_100": -7.975,
+          "ci95": [
+            -91.91312500000001,
+            75.52999999999997
+          ],
+          "difference_vs_traditional": -11.075,
+          "difference_ci95": [
+            -94.69937499999999,
+            70.30999999999982
+          ]
+        }
+      }
+    },
+    "traditional": {
+      "matchups": {
+        "tighter": {
+          "bb_per_100": -44.2875,
+          "ci95": [
+            -78.0396875,
+            -10.545312500000026
+          ],
+          "difference_vs_traditional": 0.0,
+          "difference_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "looser": {
+          "bb_per_100": 404.725,
+          "ci95": [
+            349.591875,
+            460.7168749999999
+          ],
+          "difference_vs_traditional": 0.0,
+          "difference_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bluffing_rules": {
+          "bb_per_100": 3.1,
+          "ci95": [
+            -0.750625,
+            8.075624999999995
+          ],
+          "difference_vs_traditional": 0.0,
+          "difference_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "seed-303": {
+      "matchups": {
+        "tighter": {
+          "bb_per_100": 20.1625,
+          "ci95": [
+            -34.468125,
+            73.14906249999994
+          ],
+          "difference_vs_traditional": 64.45,
+          "difference_ci95": [
+            8.849375,
+            121.975625
+          ]
+        },
+        "looser": {
+          "bb_per_100": 40.025,
+          "ci95": [
+            -49.54875,
+            126.99312499999989
+          ],
+          "difference_vs_traditional": -364.7,
+          "difference_ci95": [
+            -466.100625,
+            -263.7112500000001
+          ]
+        },
+        "bluffing_rules": {
+          "bb_per_100": 21.8,
+          "ci95": [
+            -61.3525,
+            104.37874999999998
+          ],
+          "difference_vs_traditional": 18.7,
+          "difference_ci95": [
+            -63.931875,
+            99.0424999999999
+          ]
+        }
+      }
+    }
+  }
+}

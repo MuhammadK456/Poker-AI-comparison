@@ -1,0 +1,89 @@
+{
+  "seed": 303,
+  "requested_decisions": 250000,
+  "validation_pairs": 100,
+  "dqn": {
+    "learning_rate": 0.0003,
+    "batch_size": 128,
+    "replay_capacity": 50000,
+    "warmup": 5000,
+    "update_every": 4,
+    "target_every": 1000,
+    "gamma": 1.0,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay": 100000,
+    "gradient_clip": 10.0
+  },
+  "equity": {
+    "samples": 256,
+    "seed": 20261027,
+    "cache_size": 4096
+  },
+  "feature_version": "visible-163-v1",
+  "opponent_mixture": {
+    "random": 0.1,
+    "passive": 0.2,
+    "tight": 0.35,
+    "loose_aggressive": 0.35
+  },
+  "threshold_opponents": {
+    "tight": {
+      "call_threshold": 0.5,
+      "raise_threshold": 0.75,
+      "allin_threshold": 0.95
+    },
+    "loose_aggressive": {
+      "call_threshold": 0.3,
+      "raise_threshold": 0.58,
+      "allin_threshold": 0.9
+    }
+  },
+  "traditional_snapshot": {
+    "policy": "no_bluff",
+    "config": {
+      "base_margin": 0.03,
+      "position_margin": 0.02,
+      "repeated_raise_margin": 0.02,
+      "half_pot_threshold": 0.7,
+      "pot_threshold": 0.85,
+      "allin_threshold": 0.95,
+      "bluff_probability": 0.0,
+      "value_betting": true
+    },
+    "development_seed": 20261104,
+    "status": "frozen after predeclared development comparison; not final-test validated"
+  },
+  "threads": 1,
+  "device": "cpu",
+  "validation_every": 25000,
+  "validation_seed": 20261104,
+  "source_sha256": {
+    "equity.py": "7e56fe9e9541533aab690b8b2d5e7fc6a6c34f384b4f9eb6757e57fcc45905d6",
+    "learning_env.py": "d7a499fa8f4a94e040b6fc998b0f8624ff363a29d13b3e963a2cf17bc42ba1e5",
+    "randomness.py": "24487a923e1e445463fb48e92282252480280f638f223336e5722a21aa56c744",
+    "__init__.py": "eab80e1f5705aea4cd089f294937c77f5f09aee9daffb71e15bb375ea4735cb8",
+    "features.py": "46adb6d61cfee2389ab02b36c13c91bec19274e5b5aa2281050112696448f153",
+    "agents.py": "6b4330c7ad985f935a5e7305246dcc0a2feee4ad18ed9446ffcc5efa018428c6",
+    "diagnose.py": "bd62e0b48fd68f34be8e9b5e9bf11130bca907673c507de141ca648666bc292e",
+    "replay.py": "fba91edabc9510405966525d4bfeaf48af0aa061d91bfb6b824f5d3b29020b37",
+    "equity_audit.py": "6f44fbf3f02cb73d52e66230f9a38e209be57f778b5be109b264fc82cd789467",
+    "train.py": "f7c2ac5ddceef66f3db15886fc09424d69df618e59d4412b9a49f0764544c11a",
+    "environment.py": "b4340c785941752e5c77e284656907d1948d8cc306161fc785471232818be5bf",
+    "traditional_eval.py": "44f7ff6015291d609a65327721da16aefc692f36f9cb65513c8701f2f1e20a76",
+    "traditional.py": "a59e87b93a96c851f33a340e03ba98b2439f0373476aa4f9ca214adef6557023",
+    "dqn.py": "3954f0d7dbf4714538152d53d92fefc555729d69d59aa5ec9c6a558ba827b9c9",
+    "study.py": "7795819fded5b8e14f6424eda242c0bc4edbb1c4030f1859bd0fe88eda8d175e",
+    "match.py": "60872b6c1d29b2501abc3a6272a3d7e646c92b8ac882dd408a5ff8cfcaf150ba"
+  },
+  "preflop_sha256": "d9003794a564e2fb1764634f6151689f27470b2387bcef589814675baf3f6f30",
+  "runtime": {
+    "python": "3.11.9",
+    "torch": "2.14.1",
+    "numpy": "2.4.6",
+    "pokerkit": "0.7.7",
+    "treys": "0.1.8",
+    "platform": "macOS-14.2.1-arm64-arm-64bit"
+  },
+  "checkpoint_selection": "Fixed final budget; intermediate validation is descriptive, no best-checkpoint search"
+}
