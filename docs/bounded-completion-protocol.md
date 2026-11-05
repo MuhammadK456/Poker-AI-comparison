@@ -2,8 +2,7 @@
 
 Frozen November 4, 2026, before new training or robustness results. This phase
 contains exactly one ablation and three additional opponent configurations.
-No hyperparameter search, longer budget, new algorithm, game variant, opponent
-learning system, or UI is included. Keep the existing v1 models unchanged.
+The reference models and training budget remained fixed.
 
 ## One ablation
 
@@ -37,18 +36,8 @@ This keeps the two questions separate and bounds compute. Report paired
 differences and per-seed intervals, not a pooled winner. No retuning follows
 unfavorable outcomes.
 
-## Finish boundary
+## Results
 
-After these experiments, stop development expansion and prepare the final
-evaluation/presentation phase. The position-feature ablation and a genuinely
-new opponent family move out of the required v1 scope. Bayesian modeling,
-betting rollouts, self-play, larger networks and variable stacks remain optional
-future work. Final-test deals and opponent settings remain untouched until the
-final protocol is frozen. Do not automatically launch the final test here.
-
-## Completed
-
-All three no-equity runs and both evaluation panels completed. See the
-[combined report](bounded-experiments-20261104/README.md) and
-[findings/scope boundary](bounded-experiments-20261104/findings.md).
+See the [combined report](bounded-experiments-20261104/README.md) and
+[interpretation](bounded-experiments-20261104/findings.md).
 No retuning or additional training followed the results.

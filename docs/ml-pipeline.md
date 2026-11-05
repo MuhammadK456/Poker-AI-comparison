@@ -201,10 +201,9 @@ viewing these results.
 
 The pilot passes pipeline correctness, finite-update, throughput and memory
 checks. It does **not** establish convergence or a competitive learned policy.
-The next stage should inspect behavior and undertake the planned larger,
-multi-seed development runs, while retaining this initial result and keeping
-final-test deals untouched. Full experiments, ablations and training-run
-uncertainty are still pending.
+The subsequent [three-seed study](three-seed-20261104/README.md),
+[equity ablation](bounded-experiments-20261104/README.md), and
+[final evaluation](final-evaluation-20261104/README.md) report the larger experiments.
 
 ### Saved artifacts
 

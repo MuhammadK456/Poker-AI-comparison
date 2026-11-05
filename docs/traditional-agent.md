@@ -119,7 +119,7 @@ they are experiment logs and must never become inputs to another agent.
 The equity cache is shared and policy order is fixed, so recorded latency is
 diagnostic, not a fair policy speed comparison.
 
-## Validation and remaining work
+## Validation
 
 ### Recorded development result
 

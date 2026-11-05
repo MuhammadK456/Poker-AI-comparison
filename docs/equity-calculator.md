@@ -115,9 +115,3 @@ tables removed setup overhead without changing sampled outcomes.
 The small, durable results snapshot is [equity-audit-20261103.json](equity-audit-20261103.json).
 It records configuration, runtime versions and the generated preflop table's
 SHA-256 hash. Large raw logs remain in the ignored artifacts directory.
-
-## Next work
-
-Use the calculator in explicit, explainable calling/value-betting rules and
-additional fixed opponent styles. Then encode the shared features for the
-learned agent. Equity calculations alone do not choose a betting strategy.

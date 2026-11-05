@@ -1,4 +1,4 @@
-# Interpretation and next steps
+# Development evaluation interpretation
 
 The 2,000-pair development evaluation gives a clearer picture than the previous
 100-pair validation. All three saved ML policies have positive paired improvements
@@ -20,17 +20,15 @@ does not identify the cause as overfitting, missing features or insufficient
 training. The smaller study's positive tight-opponent point estimates did not
 persist on the new deals; this illustrates why the larger sample was needed.
 
-Keep the original final evaluation starting budget of 10,000 paired deals.
+The precision estimates supported a final evaluation budget of 10,000 paired deals.
 For the current models and opponents, estimated direct-match 95% half-widths
 at that size are about 36–38 bb/100, and the worst paired-comparison requirement
 for a ±100 target is 4,104 pairs. The same-panel runtime projection is about
 41 minutes. These are approximate precision/cost estimates, not power guarantees;
 new opponent families may have different variances.
 
-Next work remains opponent robustness and the no-equity feature ablation,
-followed by a frozen final-test protocol. Do not extend training or pick a best
-checkpoint based on this evaluation. Preserve the current agents as version one.
-Keep final opponent settings/deals out of development tuning.
+The subsequent robustness and equity-ablation experiments retained the original
+models. Final-test deals were excluded from development tuning.
 
 Validation: all 67 tests passed. All 80,000 hand records passed completeness,
 seat-pair/deck-matching and exact paired-return reconstruction checks. No new

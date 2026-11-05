@@ -1,4 +1,4 @@
-# Reproduction and local release
+# Reproduction
 
 Verified on November 4, 2026 using Python 3.11 on the project's Apple Silicon Mac.
 The lock file pins runtime dependencies and setuptools; pip itself is an install
@@ -34,7 +34,7 @@ checkpoint; it uses a separate demo seed and does not consume final-test deals.
 
 ## Bundle contents
 
-The local `poker-ai-v1.zip` contains:
+The full model/results bundle contains:
 
 - Source, tests, configuration snapshots, pinned requirements and reports/figures.
 - All three original final checkpoints and all three no-equity final checkpoints.
@@ -50,12 +50,12 @@ handoff notes, and the first pilot checkpoint. Those omissions do not prevent
 running the demo, auditing/reporting the included studies, replaying the final
 test, or retraining. The complete original workspace retains its other artifacts.
 Historical reports describe their original runs; not every early-stage artifact
-is in the release. Saved absolute paths in old metadata are provenance, not
-requirements for running the relative-path commands.
+is in the bundle. Exported metadata uses project-relative paths.
 
-The bundle is local and has not been published to GitHub or another service.
-The source tree is Git-ready; no repository/remote or public release is created
-by the packaging command. Raw artifacts are ignored by the supplied `.gitignore`.
+The Git repository contains source, configurations, tests, and reports. Model
+checkpoints and raw hand logs are excluded by `.gitignore`; a source-only clone
+must restore the models or train new ones as described in the root README.
+The packaging command builds a local archive and does not publish a release.
 
 ## Audit and regenerate without replaying 400,000 hands
 

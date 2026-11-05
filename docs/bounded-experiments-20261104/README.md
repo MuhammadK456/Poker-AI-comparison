@@ -5,7 +5,7 @@ and [reproduction checks](../reproduction.md). This report preserves the develop
 
 Exactly one feature ablation, three seeds, and three opponent-parameter variations. All checkpoints are fixed final 250k-decision models. No retuning or final testing.
 
-See [findings and version-one boundary](findings.md) for interpretation, validation and remaining work.
+See [interpretation](findings.md) for findings and validation.
 
 ## No-equity ablation
 

@@ -1,12 +1,11 @@
-# Milestone 1: engine and reproducible matches
+# Engine adapter and reproducible matches
 
 Implemented November 3, 2026. Runtime: Python 3.11; PokerKit 0.7.7.
 
 ## Decisions
 
-The first milestone uses only PokerKit and the standard library. NumPy,
-Treys and PyTorch will be introduced when their components are implemented.
-The research environment is separate from the new project environment.
+The engine adapter uses PokerKit and the standard library. Probability
+estimation and learning are implemented in separate modules.
 
 Card automations are disabled. After creating the engine state, the adapter
 replaces its undealt deck with an explicit 52-card permutation and advances
@@ -59,10 +58,3 @@ The separate 1,000-pair random-versus-passive CLI smoke run exercises 2,000
 additional hands. Its output is local under `artifacts/milestone-1-smoke/`.
 These checks validate this adapter's initial scope; they do not establish
 learning performance, full engine correctness or end-to-end training speed.
-
-## Deferred work
-
-Equity and numeric feature encoding, traditional and learned agents, training
-transitions/replay, latency measurement, confidence intervals and a replay UI
-are later milestones. The existing full action logs support later analysis.
-Bayesian opponent modeling and betting rollouts remain optional extensions.

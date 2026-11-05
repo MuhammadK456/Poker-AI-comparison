@@ -46,7 +46,7 @@ The JSON includes alternative ±50/±200 targets. All intervals are pointwise, w
 
 Absolute-return and paired-difference intervals use separate bootstrap random streams. Against the deterministic traditional self-play reference, the underlying samples coincide, but finite resampling can put endpoints on opposite sides of zero. Treat a boundary result as fragile; do not choose whichever interval gives a preferred conclusion.
 
-See [interpretation and next steps](findings.md) for the development findings.
+See [interpretation](findings.md) for the development findings.
 
 ## Seat breakdown
 

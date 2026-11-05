@@ -4,3 +4,7 @@ __pycache__/
 artifacts/
 .DS_Store
 docs/project-handoff.md
+
+# Personal preparation and publication notes stay local.
+private-notes/
+docs/publication.md

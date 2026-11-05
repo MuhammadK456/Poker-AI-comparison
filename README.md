@@ -4,13 +4,12 @@ A reproducible comparison of handwritten and learned action selection in
 heads-up Texas Hold’em. Both main agents use the same visible information,
 equity estimate and legal betting menu.
 
-**Version one is complete.** The engine, agents, three-seed training, bounded
-ablation/robustness studies, final evaluation, replay demo and clean-install
-checks are finished. No further tuning or scope expansion is required.
+The study includes three-seed training, an equity-feature ablation, opponent
+robustness checks, and a held-out evaluation of 400,000 hands.
 
 ## Start here
 
-- **Understand the project:** [explanation and walkthrough](docs/project-explanation.md)
+- **Understand the project:** [architecture and methodology](docs/project-explanation.md)
 - **See the results:** [final report and charts](docs/final-evaluation-20261104/README.md)
 - **See it play:** [saved four-hand replay](docs/replay-example/README.md)
 - **Run or reproduce it:** [setup below](#run-it) and [reproduction guide](docs/reproduction.md)
@@ -106,7 +105,7 @@ Training/evaluation runtimes are measured observations, not portable guarantees.
 The final test holds out **deals**, not opponent families. Ablation and robustness
 findings remain development evidence. No best seed/checkpoint was selected.
 
-- [Project explanation and interview walkthrough](docs/project-explanation.md)
+- [Architecture and methodology](docs/project-explanation.md)
 - [Final protocol](docs/final-evaluation-protocol.md) and [results](docs/final-evaluation-20261104/README.md)
 - [Main learning curves](docs/three-seed-20261104/README.md)
 - [Bounded ablation/robustness report](docs/bounded-experiments-20261104/README.md)
@@ -141,15 +140,10 @@ All modules live under `poker_ai/`. Configuration snapshots are under `configs/`
 durable reports are under `docs/`; raw experiments and models are under ignored
 `artifacts/`.
 
-## Limits and completion boundary
+## Limitations
 
 This is a fixed-opponent learning study, not an equilibrium solver or a human
 poker benchmark. Equity assumes a uniform legal opposing hand and is not betting
 action EV. The network summarizes history and can produce miscalibrated Q-values.
 Three training seeds provide limited replication; hand-level intervals do not
 measure training-run uncertainty.
-
-The main comparison, one equity ablation, three opponent variations, final test,
-and simple replay demo complete version one. Position ablations, new opponent
-families, Bayesian ranges, betting rollouts, self-play, larger networks, variable
-stacks and a graphical interface are outside this version's required scope.

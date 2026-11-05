@@ -1,6 +1,6 @@
-# Explaining the project
+# Architecture and methodology
 
-## A short introduction
+## Overview
 
 This project compares handwritten and learned decision-making in heads-up poker.
 Both agents get the same visible information, calculated equity estimate and
@@ -67,49 +67,13 @@ head-to-head intervals receive a Bonferroni adjustment. Secondary matchup
 intervals are clearly labeled pointwise. Multiple training seeds and many
 evaluation hands address different uncertainties; one cannot substitute for the other.
 
-## Questions to be ready to answer
-
-**Does equity tell the bot which bet is profitable?** No. It estimates pot share
-if the hand reaches showdown against an assumed range. It does not model fold
-probability, future bets or the changing strength implied by an opponent's actions.
-
-**Why give ML a calculated equity feature?** The core comparison isolates
-learned versus handwritten action selection using comparable inputs. The
-no-equity ablation separately examines the value of that supplied estimate.
-
-**Why does a Q-value sometimes exceed one?** The network output is unconstrained.
-For this reward definition, true expected terminal values are bounded, so
-out-of-range estimates expose approximation/calibration error. They are not
-valid probabilities and do not prove that a selected action is good.
-
-**Did ML beat the traditional bot?** Not reliably in direct final play. All
-three adjusted intervals include zero. It did outperform the baseline against
-some shared opponents and underperform against others. Describe those separately.
-
-**Is this an equilibrium solver?** No. It learns against a fixed opponent
-distribution. There is no exploitability bound, self-play equilibrium claim
-or evidence about arbitrary human players.
-
-**Why not keep tuning until ML wins?** That would change the project question
-and bias the result. We completed the fixed-budget comparison, retained all
-seeds and reported failures. Further work is outside this version's scope.
-
-## Practical limits
+## Limitations
 
 The game has two players, reset 100-BB stacks, no rake, and discrete bet sizes.
-The equity range is uniform; history features omit full action order. Three
-training seeds give limited replication. Final deals are unseen, but opponent
-settings are familiar. Checkpoints support inference, not exact training resume.
-The project demonstrates simulation, RL engineering and statistical evaluation;
-it does not establish human poker skill, financial performance or hiring outcomes.
-
-## A factual portfolio description
-
-“Built a reproducible heads-up poker comparison between an interpretable
-equity-and-rules agent and masked Double DQN; trained three seeds, tested
-400,000 held-out hands with paired uncertainty estimates, and evaluated an
-equity-feature ablation under a fixed compute budget.”
-
-Use that description only alongside an explanation you can give in your own
-words. The [final report](final-evaluation-20261104/README.md), [ML guide](ml-pipeline.md)
-and [traditional-agent guide](traditional-agent.md) provide the implementation detail.
+Equity assumes a uniform legal opponent hand; it does not estimate action value,
+fold probability, or future betting. History features omit full action order.
+Network Q-values are unconstrained estimates, not probabilities, and may be
+miscalibrated. Three training seeds provide limited replication. Final deals
+are unseen, but opponent families are familiar. This is a fixed-opponent study,
+not an equilibrium solver or a benchmark of play against humans.
+Checkpoints support inference, not exact training continuation.
