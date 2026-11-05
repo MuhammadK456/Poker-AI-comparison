@@ -8,6 +8,14 @@ equity estimate and legal betting menu.
 ablation/robustness studies, final evaluation, replay demo and clean-install
 checks are finished. No further tuning or scope expansion is required.
 
+## Start here
+
+- **Understand the project:** [explanation and walkthrough](docs/project-explanation.md)
+- **See the results:** [final report and charts](docs/final-evaluation-20261104/README.md)
+- **See it play:** [saved four-hand replay](docs/replay-example/README.md)
+- **Run or reproduce it:** [setup below](#run-it) and [reproduction guide](docs/reproduction.md)
+- **Browse the implementation:** [source](poker_ai/), [configurations](configs/), [tests](tests/)
+
 ## Final result
 
 The final test played **400,000 hands**: 10,000 independent seat-swapped deal
@@ -59,7 +67,6 @@ Python **3.11** was tested on an Apple M2 MacBook Air. From the project root:
 python3.11 -m venv .venv
 .venv/bin/python -m pip install -r requirements-lock.txt
 .venv/bin/python -m unittest discover -s tests -v
-.venv/bin/python -m poker_ai.demo
 ```
 
 The local release bundle contains the saved models used by the default demo.
