@@ -4,9 +4,7 @@ A reproducible comparison of handwritten and learned action selection in
 heads-up Texas Hold’em. Both main agents use the same visible information,
 equity estimate and legal betting menu.
 
-**Version one is complete.** The engine, agents, three-seed training, bounded
-ablation/robustness studies, final evaluation, replay demo and clean-install
-checks are finished. No further tuning or scope expansion is required.
+
 
 ## Start here
 
