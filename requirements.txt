@@ -1,0 +1,5 @@
+pokerkit==0.7.7
+treys==0.1.8
+numpy==2.4.6
+torch==2.14.1
+matplotlib==3.11.2

@@ -1,0 +1,10 @@
+{
+  "purpose": "Bounded configuration-shift check, not new opponent families or final testing",
+  "pairs": 2000,
+  "seed": 2026110403,
+  "opponents": {
+    "tighter": {"kind": "threshold", "call_threshold": 0.60, "raise_threshold": 0.85, "allin_threshold": 0.98},
+    "looser": {"kind": "threshold", "call_threshold": 0.20, "raise_threshold": 0.50, "allin_threshold": 0.85},
+    "bluffing_rules": {"kind": "traditional", "bluff_probability": 0.15}
+  }
+}

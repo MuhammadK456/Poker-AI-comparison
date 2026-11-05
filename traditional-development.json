@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "purpose": "Development only; no final-test deals or ML checkpoint selection",
+  "selection_rule": "Select bluff_05 only if the lower paired-bootstrap 95% interval for its equally weighted mean improvement over no_bluff is above zero; otherwise retain no_bluff. Pot_odds is an ablation, not a candidate.",
+  "candidates": ["no_bluff", "bluff_05"],
+  "policies": {
+    "no_bluff": {"base_margin": 0.03, "position_margin": 0.02, "repeated_raise_margin": 0.02, "half_pot_threshold": 0.70, "pot_threshold": 0.85, "allin_threshold": 0.95, "bluff_probability": 0.0, "value_betting": true},
+    "bluff_05": {"base_margin": 0.03, "position_margin": 0.02, "repeated_raise_margin": 0.02, "half_pot_threshold": 0.70, "pot_threshold": 0.85, "allin_threshold": 0.95, "bluff_probability": 0.05, "value_betting": true},
+    "pot_odds": {"base_margin": 0.0, "position_margin": 0.0, "repeated_raise_margin": 0.0, "half_pot_threshold": 0.70, "pot_threshold": 0.85, "allin_threshold": 0.95, "bluff_probability": 0.0, "value_betting": false}
+  },
+  "opponents": {
+    "random": {"kind": "random"},
+    "passive": {"kind": "passive"},
+    "tight": {"kind": "threshold", "call_threshold": 0.50, "raise_threshold": 0.75, "allin_threshold": 0.95},
+    "loose_aggressive": {"kind": "threshold", "call_threshold": 0.30, "raise_threshold": 0.58, "allin_threshold": 0.90}
+  }
+}

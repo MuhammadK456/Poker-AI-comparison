@@ -1,0 +1,15 @@
+{
+  "policy": "no_bluff",
+  "config": {
+    "base_margin": 0.03,
+    "position_margin": 0.02,
+    "repeated_raise_margin": 0.02,
+    "half_pot_threshold": 0.7,
+    "pot_threshold": 0.85,
+    "allin_threshold": 0.95,
+    "bluff_probability": 0.0,
+    "value_betting": true
+  },
+  "development_seed": 20261104,
+  "status": "frozen after predeclared development comparison; not final-test validated"
+}

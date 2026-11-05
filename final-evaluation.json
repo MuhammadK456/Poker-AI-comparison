@@ -1,0 +1,15 @@
+{
+  "purpose": "Final held-out-deal evaluation; fixed policies, no training or selection",
+  "pairs": 10000,
+  "seed": 2026110404,
+  "deal_namespace": "poker_final_test_v1",
+  "workers": 3,
+  "seeds": [101, 202, 303],
+  "opponents": ["random", "passive", "tight", "loose_aggressive", "traditional"],
+  "primary": "Each original equity-enabled DQN final checkpoint directly versus traditional",
+  "primary_bootstrap_resamples": 10000,
+  "secondary_bootstrap_resamples": 2000,
+  "primary_simultaneous_coverage": 0.9833333333333333,
+  "selection": "All three fixed final 250k checkpoints retained; no best-seed selection",
+  "limits": "New deals against existing fixed opponent settings, not unseen families or human play. Ablation and robustness findings remain development analyses. No additional experiments after this test."
+}

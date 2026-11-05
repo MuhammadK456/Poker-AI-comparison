@@ -1,0 +1,855 @@
+{
+  "schema_version": 1,
+  "algorithm": "uniform-showdown-v1",
+  "treys": "0.1.8",
+  "opponent_range": "uniform_legal",
+  "samples_per_class": 10000,
+  "seed": 20261027,
+  "entries": {
+    "AA": {
+      "wins": 8490,
+      "ties": 64,
+      "losses": 1446
+    },
+    "AKs": {
+      "wins": 6600,
+      "ties": 162,
+      "losses": 3238
+    },
+    "AKo": {
+      "wins": 6408,
+      "ties": 176,
+      "losses": 3416
+    },
+    "AQs": {
+      "wins": 6577,
+      "ties": 170,
+      "losses": 3253
+    },
+    "AQo": {
+      "wins": 6280,
+      "ties": 188,
+      "losses": 3532
+    },
+    "AJs": {
+      "wins": 6474,
+      "ties": 196,
+      "losses": 3330
+    },
+    "AJo": {
+      "wins": 6300,
+      "ties": 221,
+      "losses": 3479
+    },
+    "ATs": {
+      "wins": 6341,
+      "ties": 237,
+      "losses": 3422
+    },
+    "ATo": {
+      "wins": 6192,
+      "ties": 241,
+      "losses": 3567
+    },
+    "A9s": {
+      "wins": 6214,
+      "ties": 260,
+      "losses": 3526
+    },
+    "A9o": {
+      "wins": 6010,
+      "ties": 297,
+      "losses": 3693
+    },
+    "A8s": {
+      "wins": 5981,
+      "ties": 269,
+      "losses": 3750
+    },
+    "A8o": {
+      "wins": 5856,
+      "ties": 332,
+      "losses": 3812
+    },
+    "A7s": {
+      "wins": 5963,
+      "ties": 307,
+      "losses": 3730
+    },
+    "A7o": {
+      "wins": 5661,
+      "ties": 331,
+      "losses": 4008
+    },
+    "A6s": {
+      "wins": 5829,
+      "ties": 365,
+      "losses": 3806
+    },
+    "A6o": {
+      "wins": 5575,
+      "ties": 368,
+      "losses": 4057
+    },
+    "A5s": {
+      "wins": 5776,
+      "ties": 356,
+      "losses": 3868
+    },
+    "A5o": {
+      "wins": 5523,
+      "ties": 365,
+      "losses": 4112
+    },
+    "A4s": {
+      "wins": 5757,
+      "ties": 345,
+      "losses": 3898
+    },
+    "A4o": {
+      "wins": 5439,
+      "ties": 382,
+      "losses": 4179
+    },
+    "A3s": {
+      "wins": 5636,
+      "ties": 363,
+      "losses": 4001
+    },
+    "A3o": {
+      "wins": 5422,
+      "ties": 402,
+      "losses": 4176
+    },
+    "A2s": {
+      "wins": 5549,
+      "ties": 386,
+      "losses": 4065
+    },
+    "A2o": {
+      "wins": 5251,
+      "ties": 416,
+      "losses": 4333
+    },
+    "KK": {
+      "wins": 8267,
+      "ties": 53,
+      "losses": 1680
+    },
+    "KQs": {
+      "wins": 6267,
+      "ties": 184,
+      "losses": 3549
+    },
+    "KQo": {
+      "wins": 6182,
+      "ties": 200,
+      "losses": 3618
+    },
+    "KJs": {
+      "wins": 6091,
+      "ties": 207,
+      "losses": 3702
+    },
+    "KJo": {
+      "wins": 6009,
+      "ties": 236,
+      "losses": 3755
+    },
+    "KTs": {
+      "wins": 6077,
+      "ties": 207,
+      "losses": 3716
+    },
+    "KTo": {
+      "wins": 5853,
+      "ties": 243,
+      "losses": 3904
+    },
+    "K9s": {
+      "wins": 5829,
+      "ties": 258,
+      "losses": 3913
+    },
+    "K9o": {
+      "wins": 5539,
+      "ties": 300,
+      "losses": 4161
+    },
+    "K8s": {
+      "wins": 5631,
+      "ties": 321,
+      "losses": 4048
+    },
+    "K8o": {
+      "wins": 5439,
+      "ties": 321,
+      "losses": 4240
+    },
+    "K7s": {
+      "wins": 5578,
+      "ties": 343,
+      "losses": 4079
+    },
+    "K7o": {
+      "wins": 5319,
+      "ties": 342,
+      "losses": 4339
+    },
+    "K6s": {
+      "wins": 5545,
+      "ties": 331,
+      "losses": 4124
+    },
+    "K6o": {
+      "wins": 5182,
+      "ties": 347,
+      "losses": 4471
+    },
+    "K5s": {
+      "wins": 5435,
+      "ties": 407,
+      "losses": 4158
+    },
+    "K5o": {
+      "wins": 5092,
+      "ties": 420,
+      "losses": 4488
+    },
+    "K4s": {
+      "wins": 5232,
+      "ties": 389,
+      "losses": 4379
+    },
+    "K4o": {
+      "wins": 4956,
+      "ties": 438,
+      "losses": 4606
+    },
+    "K3s": {
+      "wins": 5261,
+      "ties": 358,
+      "losses": 4381
+    },
+    "K3o": {
+      "wins": 4925,
+      "ties": 404,
+      "losses": 4671
+    },
+    "K2s": {
+      "wins": 5196,
+      "ties": 410,
+      "losses": 4394
+    },
+    "K2o": {
+      "wins": 4806,
+      "ties": 395,
+      "losses": 4799
+    },
+    "QQ": {
+      "wins": 7891,
+      "ties": 63,
+      "losses": 2046
+    },
+    "QJs": {
+      "wins": 5920,
+      "ties": 216,
+      "losses": 3864
+    },
+    "QJo": {
+      "wins": 5783,
+      "ties": 231,
+      "losses": 3986
+    },
+    "QTs": {
+      "wins": 5835,
+      "ties": 267,
+      "losses": 3898
+    },
+    "QTo": {
+      "wins": 5683,
+      "ties": 263,
+      "losses": 4054
+    },
+    "Q9s": {
+      "wins": 5571,
+      "ties": 295,
+      "losses": 4134
+    },
+    "Q9o": {
+      "wins": 5363,
+      "ties": 318,
+      "losses": 4319
+    },
+    "Q8s": {
+      "wins": 5474,
+      "ties": 301,
+      "losses": 4225
+    },
+    "Q8o": {
+      "wins": 5215,
+      "ties": 384,
+      "losses": 4401
+    },
+    "Q7s": {
+      "wins": 5232,
+      "ties": 334,
+      "losses": 4434
+    },
+    "Q7o": {
+      "wins": 5074,
+      "ties": 377,
+      "losses": 4549
+    },
+    "Q6s": {
+      "wins": 5210,
+      "ties": 395,
+      "losses": 4395
+    },
+    "Q6o": {
+      "wins": 4929,
+      "ties": 416,
+      "losses": 4655
+    },
+    "Q5s": {
+      "wins": 5043,
+      "ties": 381,
+      "losses": 4576
+    },
+    "Q5o": {
+      "wins": 4754,
+      "ties": 449,
+      "losses": 4797
+    },
+    "Q4s": {
+      "wins": 4842,
+      "ties": 392,
+      "losses": 4766
+    },
+    "Q4o": {
+      "wins": 4661,
+      "ties": 459,
+      "losses": 4880
+    },
+    "Q3s": {
+      "wins": 4899,
+      "ties": 393,
+      "losses": 4708
+    },
+    "Q3o": {
+      "wins": 4627,
+      "ties": 469,
+      "losses": 4904
+    },
+    "Q2s": {
+      "wins": 4874,
+      "ties": 370,
+      "losses": 4756
+    },
+    "Q2o": {
+      "wins": 4580,
+      "ties": 413,
+      "losses": 5007
+    },
+    "JJ": {
+      "wins": 7706,
+      "ties": 63,
+      "losses": 2231
+    },
+    "JTs": {
+      "wins": 5576,
+      "ties": 270,
+      "losses": 4154
+    },
+    "JTo": {
+      "wins": 5306,
+      "ties": 295,
+      "losses": 4399
+    },
+    "J9s": {
+      "wins": 5408,
+      "ties": 327,
+      "losses": 4265
+    },
+    "J9o": {
+      "wins": 5201,
+      "ties": 337,
+      "losses": 4462
+    },
+    "J8s": {
+      "wins": 5261,
+      "ties": 357,
+      "losses": 4382
+    },
+    "J8o": {
+      "wins": 4968,
+      "ties": 363,
+      "losses": 4669
+    },
+    "J7s": {
+      "wins": 5034,
+      "ties": 391,
+      "losses": 4575
+    },
+    "J7o": {
+      "wins": 4822,
+      "ties": 364,
+      "losses": 4814
+    },
+    "J6s": {
+      "wins": 4815,
+      "ties": 405,
+      "losses": 4780
+    },
+    "J6o": {
+      "wins": 4610,
+      "ties": 435,
+      "losses": 4955
+    },
+    "J5s": {
+      "wins": 4832,
+      "ties": 424,
+      "losses": 4744
+    },
+    "J5o": {
+      "wins": 4542,
+      "ties": 457,
+      "losses": 5001
+    },
+    "J4s": {
+      "wins": 4691,
+      "ties": 437,
+      "losses": 4872
+    },
+    "J4o": {
+      "wins": 4352,
+      "ties": 451,
+      "losses": 5197
+    },
+    "J3s": {
+      "wins": 4495,
+      "ties": 460,
+      "losses": 5045
+    },
+    "J3o": {
+      "wins": 4286,
+      "ties": 482,
+      "losses": 5232
+    },
+    "J2s": {
+      "wins": 4604,
+      "ties": 422,
+      "losses": 4974
+    },
+    "J2o": {
+      "wins": 4278,
+      "ties": 443,
+      "losses": 5279
+    },
+    "TT": {
+      "wins": 7444,
+      "ties": 82,
+      "losses": 2474
+    },
+    "T9s": {
+      "wins": 5274,
+      "ties": 291,
+      "losses": 4435
+    },
+    "T9o": {
+      "wins": 4941,
+      "ties": 329,
+      "losses": 4730
+    },
+    "T8s": {
+      "wins": 4988,
+      "ties": 379,
+      "losses": 4633
+    },
+    "T8o": {
+      "wins": 4902,
+      "ties": 364,
+      "losses": 4734
+    },
+    "T7s": {
+      "wins": 4858,
+      "ties": 398,
+      "losses": 4744
+    },
+    "T7o": {
+      "wins": 4622,
+      "ties": 434,
+      "losses": 4944
+    },
+    "T6s": {
+      "wins": 4775,
+      "ties": 394,
+      "losses": 4831
+    },
+    "T6o": {
+      "wins": 4373,
+      "ties": 451,
+      "losses": 5176
+    },
+    "T5s": {
+      "wins": 4471,
+      "ties": 456,
+      "losses": 5073
+    },
+    "T5o": {
+      "wins": 4133,
+      "ties": 495,
+      "losses": 5372
+    },
+    "T4s": {
+      "wins": 4515,
+      "ties": 497,
+      "losses": 4988
+    },
+    "T4o": {
+      "wins": 4087,
+      "ties": 495,
+      "losses": 5418
+    },
+    "T3s": {
+      "wins": 4324,
+      "ties": 480,
+      "losses": 5196
+    },
+    "T3o": {
+      "wins": 3971,
+      "ties": 486,
+      "losses": 5543
+    },
+    "T2s": {
+      "wins": 4269,
+      "ties": 431,
+      "losses": 5300
+    },
+    "T2o": {
+      "wins": 3936,
+      "ties": 527,
+      "losses": 5537
+    },
+    "99": {
+      "wins": 7188,
+      "ties": 67,
+      "losses": 2745
+    },
+    "98s": {
+      "wins": 4981,
+      "ties": 387,
+      "losses": 4632
+    },
+    "98o": {
+      "wins": 4607,
+      "ties": 395,
+      "losses": 4998
+    },
+    "97s": {
+      "wins": 4704,
+      "ties": 437,
+      "losses": 4859
+    },
+    "97o": {
+      "wins": 4415,
+      "ties": 433,
+      "losses": 5152
+    },
+    "96s": {
+      "wins": 4468,
+      "ties": 453,
+      "losses": 5079
+    },
+    "96o": {
+      "wins": 4252,
+      "ties": 452,
+      "losses": 5296
+    },
+    "95s": {
+      "wins": 4266,
+      "ties": 522,
+      "losses": 5212
+    },
+    "95o": {
+      "wins": 3949,
+      "ties": 527,
+      "losses": 5524
+    },
+    "94s": {
+      "wins": 4025,
+      "ties": 510,
+      "losses": 5465
+    },
+    "94o": {
+      "wins": 3845,
+      "ties": 583,
+      "losses": 5572
+    },
+    "93s": {
+      "wins": 4088,
+      "ties": 493,
+      "losses": 5419
+    },
+    "93o": {
+      "wins": 3762,
+      "ties": 495,
+      "losses": 5743
+    },
+    "92s": {
+      "wins": 3946,
+      "ties": 490,
+      "losses": 5564
+    },
+    "92o": {
+      "wins": 3701,
+      "ties": 532,
+      "losses": 5767
+    },
+    "88": {
+      "wins": 6889,
+      "ties": 88,
+      "losses": 3023
+    },
+    "87s": {
+      "wins": 4466,
+      "ties": 477,
+      "losses": 5057
+    },
+    "87o": {
+      "wins": 4287,
+      "ties": 451,
+      "losses": 5262
+    },
+    "86s": {
+      "wins": 4375,
+      "ties": 494,
+      "losses": 5131
+    },
+    "86o": {
+      "wins": 4070,
+      "ties": 504,
+      "losses": 5426
+    },
+    "85s": {
+      "wins": 4220,
+      "ties": 501,
+      "losses": 5279
+    },
+    "85o": {
+      "wins": 3915,
+      "ties": 524,
+      "losses": 5561
+    },
+    "84s": {
+      "wins": 3981,
+      "ties": 518,
+      "losses": 5501
+    },
+    "84o": {
+      "wins": 3730,
+      "ties": 553,
+      "losses": 5717
+    },
+    "83s": {
+      "wins": 3806,
+      "ties": 514,
+      "losses": 5680
+    },
+    "83o": {
+      "wins": 3446,
+      "ties": 576,
+      "losses": 5978
+    },
+    "82s": {
+      "wins": 3691,
+      "ties": 557,
+      "losses": 5752
+    },
+    "82o": {
+      "wins": 3399,
+      "ties": 564,
+      "losses": 6037
+    },
+    "77": {
+      "wins": 6580,
+      "ties": 106,
+      "losses": 3314
+    },
+    "76s": {
+      "wins": 4260,
+      "ties": 540,
+      "losses": 5200
+    },
+    "76o": {
+      "wins": 3896,
+      "ties": 547,
+      "losses": 5557
+    },
+    "75s": {
+      "wins": 3992,
+      "ties": 540,
+      "losses": 5468
+    },
+    "75o": {
+      "wins": 3812,
+      "ties": 575,
+      "losses": 5613
+    },
+    "74s": {
+      "wins": 3874,
+      "ties": 563,
+      "losses": 5563
+    },
+    "74o": {
+      "wins": 3578,
+      "ties": 569,
+      "losses": 5853
+    },
+    "73s": {
+      "wins": 3668,
+      "ties": 549,
+      "losses": 5783
+    },
+    "73o": {
+      "wins": 3371,
+      "ties": 558,
+      "losses": 6071
+    },
+    "72s": {
+      "wins": 3616,
+      "ties": 531,
+      "losses": 5853
+    },
+    "72o": {
+      "wins": 3212,
+      "ties": 606,
+      "losses": 6182
+    },
+    "66": {
+      "wins": 6269,
+      "ties": 126,
+      "losses": 3605
+    },
+    "65s": {
+      "wins": 3973,
+      "ties": 561,
+      "losses": 5466
+    },
+    "65o": {
+      "wins": 3805,
+      "ties": 586,
+      "losses": 5609
+    },
+    "64s": {
+      "wins": 3846,
+      "ties": 579,
+      "losses": 5575
+    },
+    "64o": {
+      "wins": 3531,
+      "ties": 599,
+      "losses": 5870
+    },
+    "63s": {
+      "wins": 3546,
+      "ties": 554,
+      "losses": 5900
+    },
+    "63o": {
+      "wins": 3263,
+      "ties": 573,
+      "losses": 6164
+    },
+    "62s": {
+      "wins": 3503,
+      "ties": 546,
+      "losses": 5951
+    },
+    "62o": {
+      "wins": 3177,
+      "ties": 563,
+      "losses": 6260
+    },
+    "55": {
+      "wins": 5944,
+      "ties": 154,
+      "losses": 3902
+    },
+    "54s": {
+      "wins": 3956,
+      "ties": 581,
+      "losses": 5463
+    },
+    "54o": {
+      "wins": 3435,
+      "ties": 643,
+      "losses": 5922
+    },
+    "53s": {
+      "wins": 3649,
+      "ties": 611,
+      "losses": 5740
+    },
+    "53o": {
+      "wins": 3319,
+      "ties": 617,
+      "losses": 6064
+    },
+    "52s": {
+      "wins": 3472,
+      "ties": 557,
+      "losses": 5971
+    },
+    "52o": {
+      "wins": 3099,
+      "ties": 645,
+      "losses": 6256
+    },
+    "44": {
+      "wins": 5677,
+      "ties": 145,
+      "losses": 4178
+    },
+    "43s": {
+      "wins": 3523,
+      "ties": 585,
+      "losses": 5892
+    },
+    "43o": {
+      "wins": 3131,
+      "ties": 650,
+      "losses": 6219
+    },
+    "42s": {
+      "wins": 3396,
+      "ties": 585,
+      "losses": 6019
+    },
+    "42o": {
+      "wins": 2982,
+      "ties": 596,
+      "losses": 6422
+    },
+    "33": {
+      "wins": 5189,
+      "ties": 171,
+      "losses": 4640
+    },
+    "32s": {
+      "wins": 3305,
+      "ties": 604,
+      "losses": 6091
+    },
+    "32o": {
+      "wins": 2892,
+      "ties": 625,
+      "losses": 6483
+    },
+    "22": {
+      "wins": 4985,
+      "ties": 180,
+      "losses": 4835
+    }
+  }
+}
